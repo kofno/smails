@@ -10,10 +10,10 @@ describe MailReceiver do
 
   before :each do
     mail_receiver.message_processor = message_processor
-    message_processor.should_receive(:process).with(test_message)
   end
 
   it 'sends newly received messages to the message processor' do
+    message_processor.should_receive(:process).with(test_message)
     mail_receiver.on_message content: test_message
   end
 end
