@@ -1,0 +1,13 @@
+Date: Mon, 18 Feb 2013 18:45:25 -0500
+From: qux@foo.com
+To: foo@foo.com
+Cc: bar@foo.com
+Bcc: baz@foo.com
+Message-ID: <5122bd1598968_110671bfa-457@Ryans-MacBook-Air.local.mail>
+Subject: This is only a test
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+This the body of a test message

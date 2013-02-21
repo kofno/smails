@@ -1,0 +1,1821 @@
+Delivered-To: ryan.l.bell@gmail.com
+Received: by 10.64.12.161 with SMTP id z1csp24609ieb;
+        Sun, 17 Feb 2013 08:06:24 -0800 (PST)
+X-Received: by 10.52.24.229 with SMTP id x5mr10375408vdf.84.1361117183498;
+        Sun, 17 Feb 2013 08:06:23 -0800 (PST)
+Return-Path: <2013021716062280794a435f42470db114265e48eedb75-CJCZTC2VQEO00@bounces.amazon.com>
+Received: from smtp-out-174-39.amazon.com (smtp-out-174-39.amazon.com. [207.171.174.39])
+        by mx.google.com with ESMTP id ck9si57057531veb.5.2013.02.17.08.06.23;
+        Sun, 17 Feb 2013 08:06:23 -0800 (PST)
+Received-SPF: pass (google.com: domain of 2013021716062280794a435f42470db114265e48eedb75-CJCZTC2VQEO00@bounces.amazon.com designates 207.171.174.39 as permitted sender) client-ip=207.171.174.39;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of 2013021716062280794a435f42470db114265e48eedb75-CJCZTC2VQEO00@bounces.amazon.com designates 207.171.174.39 as permitted sender) smtp.mail=2013021716062280794a435f42470db114265e48eedb75-CJCZTC2VQEO00@bounces.amazon.com;
+       dkim=pass header.i=@amazon.com
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=2uvkuueiefyaargm6tgkndh3xdf5ejpl; d=amazon.com; t=1361117182;
+	h=Date:From:To:Message-ID:Subject:MIME-Version:Content-Type;
+	bh=KJvVDsVo3u83Rf8d1LKRs013AouNl2C9GvJySq8Giy8=;
+	b=YdwQ3HEPSqUe9T5f7YD70JzFoQayfLMvfqGBhXtl6v617iy4TusukYd81TYs8kbo
+	LmeJmtb0PbKY7ST4QwRX/+BJaimJl2To2+f/5k2ND58E8Fr8Z2+2klOSVDUIMXCs2F3
+	sJQb/flflkuSbrsTUStZsphPv6sxAvJjCaGgpXlU=
+Return-Path: 2013021716062280794a435f42470db114265e48eedb75-CJCZTC2VQEO00@bounces.amazon.com
+Date: Sun, 17 Feb 2013 16:06:22 +0000
+From: "Amazon.com" <store-news@amazon.com>
+To: "ryan.l.bell@gmail.com" <ryan.l.bell@gmail.com>
+Message-ID: <0000013ce8e7fa40-17e57bcc-29b9-469c-9b94-281eb7b49b00-000000@email.amazonses.com>
+Subject: Kindle Fire Apps: Free Best-Selling Movie Apps
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_6656876_1292998296.1361117182425"
+Bounces-to: 2013021716062280794a435f42470db114265e48eedb75-CJCZTC2VQEO00@bounces.amazon.com
+X-AMAZON-MAIL-RELAY-TYPE: merchandizing
+X-AMAZON-RTE-VERSION: 2.0
+X-Original-MessageID: <urn.correios.msg.2013021716062280794a435f42470db114265e48eedb75@1361117182432.massmail-sender-na-1dcxl-i-ef188490.us-east-1.amazon.com>
+X-SES-Outgoing: 207.171.174.39
+
+------=_Part_6656876_1292998296.1361117182425
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_6656877_1035336879.1361117182425"
+
+------=_Part_6656877_1035336879.1361117182425
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+=====================================================================
+AMAZON.COM
+=====================================================================
+
+Dear Amazon.com Customer,
+  
+Customers who have shown an interest in Kindle Fire apps might like to know about our best-selling movie apps in time for Hollywood's biggest night.
+  
+Learn more:
+http://www.amazon.com/gp/search/ref=pe_button/?rh=i%3Amobile-apps%2Cn%3A2350149011%2Cp_n_feature_two_browse-bin%3A3305698011&bbn=2350149011&hidden-keywords=B005ZXWMUS%7CB0066TUXU6%7CB0089BPEZS%7CB004HXHVZ8%7CB008XAKC98%7CB006P57MUK%7CB0093QQAEM%7CB004GISARW%7CB006PKXB6Y%7CB0099F3DPQ%7CB00AQ32OS2%7CB00AOA9BL0%7CB007SYXJXG%7CB004I125GO&ie=UTF8
+
+=====================================================================
+Best-Selling Movie Apps
+http://www.amazon.com/gp/search/ref=pe_hdr/?rh=i%3Amobile-apps%2Cn%3A2350149011%2Cp_n_feature_two_browse-bin%3A3305698011&bbn=2350149011&hidden-keywords=B005ZXWMUS%7CB0066TUXU6%7CB0089BPEZS%7CB004HXHVZ8%7CB008XAKC98%7CB006P57MUK%7CB0093QQAEM%7CB004GISARW%7CB006PKXB6Y%7CB0099F3DPQ%7CB00AQ32OS2%7CB00AOA9BL0%7CB007SYXJXG%7CB004I125GO&ie=UTF8
+=====================================================================
+
+Hulu Plus (Kindle Tablet Edition):
+http://www.amazon.com/gp/product/ref=pe_b1/?ASIN=B0066TUXU6
+  
+HBO GO (Kindle Tablet Edition):
+http://www.amazon.com/gp/product/ref=pe_b2/?ASIN=B0089BPEZS
+  
+Movies by Flixster:
+http://www.amazon.com/gp/product/ref=pe_b3/?ASIN=B004HXHVZ8
+
+Crackle:
+http://www.amazon.com/gp/product/ref=pe_b4/?ASIN=B008XAKC98
+
+=====================================================================
+Featured New Releases
+http://www.amazon.com/gp/search/ref=pe_r_ptr/?rh=i%3Amobile-apps%2Cn%3A2350149011%2Cp_n_date%3A2479571011%2Cp_n_feature_two_browse-bin%3A3305698011&bbn=2350149011&ie=UTF8
+=====================================================================
+
+Rescue Roby:
+http://www.amazon.com/gp/product/ref=pe_b1/?ASIN=B00B29J0I6
+  
+Shaman Doctor:
+http://www.amazon.com/gp/product/ref=pe_b2/?ASIN=B00B2AKMFU
+  
+Teen Vogue Me Girl (Kindle Tablet Edition):
+http://www.amazon.com/gp/product/ref=pe_b3/?ASIN=B00B49Z8TY
+
+Miss Spider's Bedtime Story:
+http://www.amazon.com/gp/product/ref=pe_b4/?ASIN=B009ZJQCW2
+
+=====================================================================
+Featured PBS Kids Apps
+http://www.amazon.com/gp/search/ref=pe_r_ptr/?rh=i%3Amobile-apps%2Cn%3A2350149011%2Cp_4%3APBS%20KIDS%2Cp_n_feature_two_browse-bin%3A3305698011&bbn=2350149011&ie=UTF8
+=====================================================================
+
+The Electric Company Party Game: Lost on Prankster Planet (Kindle Tablet Edition):
+http://www.amazon.com/gp/product/ref=pe_b1/?ASIN=B00BBFOMWU
+  
+SUPER WHY ABC Adventures: Alphabet (Kindle Tablet Edition):
+http://www.amazon.com/gp/product/ref=pe_b2/?ASIN=B00BBF4NX8
+  
+Daniel Tiger's Neighborhood: Play at Home with Daniel:
+http://www.amazon.com/gp/product/ref=pe_b3/?ASIN=B009S984J8
+
+Dinosaur Train Mesozoic Math Adventures (Kindle Tablet Edition):
+http://www.amazon.com/gp/product/ref=pe_b4/?ASIN=B009TAGRU4
+
+=====================================================================
+Up to 50% Off Select Games
+http://www.amazon.com/gp/feature.html/ref=pe_r_ptr/?docId=1000620471&ie=UTF8
+=====================================================================
+
+N.O.V.A. 3 - Near Orbit Vanguard Alliance (Kindle Tablet Edition):
+http://www.amazon.com/gp/product/ref=pe_b1/?ASIN=B008DGEEOG
+  
+Hidden Objects: Winter Fantasy:
+http://www.amazon.com/gp/product/ref=pe_b2/?ASIN=B00AYJ7X2K
+  
+Townsmen Premium:
+http://www.amazon.com/gp/product/ref=pe_b3/?ASIN=B00933JF74
+
+Hidden Differences: Haunted Mansions:
+http://www.amazon.com/gp/product/ref=pe_b4/?ASIN=B008U184U4
+
+=====================================================================
+
+Slacker Radio:
+http://www.amazon.com/gp/product/ref=pe_stripe/?ASIN=B004SV7744
+
+=====================================================================
+
+We hope you found this message to be useful. However, if you'd 
+rather not receive future e-mails of this sort from Amazon.com, 
+please visit the opt-out link here:
+http://www.amazon.com//gp/gss/o/1dZor0ps7Qg1EHg2yBlxH6TvrLgQKB4L0yYwtHgN5hVqpZEcicWuzK-EaXUiKn7PI
+  
+Please note that product prices and availability are subject to 
+change. Prices and availability were accurate at the time this 
+newsletter was sent; however, they may differ from those you see 
+when you visit Amazon.com.
+  
+    
+
+  (c) 2013 Amazon.com, Inc. or its affiliates. All rights reserved. Amazon, Amazon.com, the Amazon.com logo and 1-Click are registered trademarks of Amazon.com, Inc. or its affiliates. Amazon.com, 410 Terry Avenue N., Seattle, WA  98109-5210.
+Reference: 28281580
+  
+Please note that this message was sent to the following e-mail address: 
+ryan.l.bell@gmail.com
+
+
+------=_Part_6656877_1035336879.1361117182425
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+
+<html>
+<head>
+<title>Amazon.com</title>
+</head>
+<body bgcolor="#ffffff" style="margin: 10px 10px;"
+
+><img src="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=RPUCICAMXQJGDQIMMZHXVCOZAI4A&T=O&U=http%3A%2F%2Fimages.amazon.com%2Fimages%2FG%2F01%2Fnav%2Ftransp.gif" /
+
+>
+<table cellpadding="0" cellspacing="0" width="650" align="center" bgcolor="#ffffff"
+
+>
+<tr>
+ <td>
+ <table cellpadding="0" cellspacing="0">
+ <tr>
+ <td align="left" width="450"
+
+>
+ <table cellpadding="0" cellspacing="0">
+ <tr>
+ <td width="8">
+ <img width="8" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" />
+ </td>
+ <td height="16" valign="middle" style="font-family:verdana,arial,sans-serif;font-size:9px;line-height:16px;color:#999999;"
+
+><a href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=GXG6DXFE5BGEDE9KDRN5X1BTKY4A&T=C&U=http%3A%2F%2Fwww.amazon.com%2F%3Fref%3Dpe_clickhere%26ref_%3Dpe_150770_28281580" style="font-family:verdana,arial,helvetica,sans-serif;font-size:9px;color:#999999;text-decoration: underline;">Click here if the e-mail below is not displayed correctly</a>.
+ </td>
+ </tr>
+ </table>
+ </td>
+ <td align="right" width="200"
+
+>
+ <table cellpadding="0" cellspacing="0">
+ <tr>
+ <td height="16" valign="middle" style="font-family:verdana,arial,sans-serif;font-size:9px;line-height:16px;color:#999999;">Follow us:
+ </td>
+ <td width="4"
+
+>
+ <img width="4" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" />
+ </td>
+ <td width="16"
+
+>
+ <a href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=IUSYAC4WA5WUIUJVFKAIL4EVJU0A&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fredirect.html%2Fref%3Dpe_150770_28281580_pe_facebook_top%2F%3Flocation%3Dhttp%3A%2F%2Fwww.facebook.com%2FAmazon%26token%3D6BD0FB927CC51E76FF446584B1040F70EA7E88E1"
+
+><img style="display:block;" border="0" src="http://g-ecx.images-amazon.com/images/G/01/email/facebook.gif" alt="Facebook" /></a>
+ </td>
+ <td width="4"
+
+>
+ <img width="4" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" />
+ </td>
+ <td width="16"
+
+>
+ <a href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=6JDV4RLASBMSCBA6PTGMZNRJVVMA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fredirect.html%2Fref%3Dpe_150770_28281580_pe_twitter_top%2F%3Flocation%3Dhttp%3A%2F%2Ftwitter.com%2Famazondeals%26token%3D7A1A4AE8F6CE0BD277D8295E58702D283F329C0F"
+
+><img style="display:block;" border="0" src="http://g-ecx.images-amazon.com/images/G/01/email/twitter.gif" alt="Twitter" /></a>
+ </td>
+ <td width="8"
+
+>
+ <img width="8" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" />
+ </td> 
+ </tr>
+ </table>
+ </td>
+ </tr>
+ </table>
+ </td>
+ </tr
+
+>
+ <tr>
+ <td>
+ <table cellpadding="0" cellspacing="0">
+ <tr>
+ <td width="650" colspan="2"
+
+>
+ <img width="650" height="25" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" />
+ </td>
+ </tr
+
+>
+ <tr>
+ <td align="left" width="153">
+ <table cellpadding="0" cellspacing="0"
+
+>
+ <tr>
+ <td width="8" rowspan="2">
+ <img width="8" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" />
+ </td>
+ <td
+
+>
+ <img height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" />
+ </td>
+ </tr
+
+>
+ <tr>
+ <td>
+ <a href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=I19VEEFWGQ7YPXIBISK0GSMYBBCA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fref%3Dpe_150770_28281580_sef_logo"
+
+>
+
+
+<img src="http://g-ec2.images-amazon.com/images/G/01/e-mail/logos/amzn_logo_prime_110x48.png" alt="Amazon.com" width="120" height="48" hspace="6" vspace="6" border="0">
+
+
+</a>
+ </td>
+ </tr>
+ </table>
+ </td>
+ <td align="right" width="497" valign="top"
+
+>
+ <table cellpadding="0" cellspacing="0">
+ <tr>
+ <td>
+ <a href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=30YAKZWZNOO9WCHZRA2E5DVSGGWA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fyourstore%2Fhome%2Fref%3Dpe_150770_28281580_pe_yourstore%2F" style="font-family:arial,verdana,sans-serif; font-size:12px; color:#004B91; text-decoration:none; font-weight: bold;">Your Amazon.com</a>
+ </td>
+ <td width="8" rowspan="2"
+
+>
+ <img width="8" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" />
+ </td> 
+ <td width="2"
+
+>
+ <img width="2" height="15" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s_blue.gif" />
+ </td> 
+ <td width="8" rowspan="2"
+
+>
+ <img width="8" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" />
+ </td> 
+ <td rowspan="2"
+
+>
+ <a href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=XGZKUOC7AM4AXG2XXBLA2AAM2HIA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fgoldbox%2Fref%3Dpe_150770_28281580_pe_goldbox%2F"
+
+><img width="21" height="19" border="0" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/goldbox.gif" /></a>
+ </td>
+ <td width="4" rowspan="2"
+
+>
+ <img width="4" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" />
+ </td> 
+ <td
+
+>
+ <a href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=MJ1AVBA3DGNQUGNZJ1XDO6VTZLUA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fgoldbox%2Fref%3Dpe_150770_28281580_pe_todaysdeal%2F" style="font-family:arial,verdana,sans-serif; font-size:12px; color:#004B91; text-decoration:none; font-weight: bold;">Today's Deals</a>
+ </td>
+ <td width="8" rowspan="2"
+
+>
+ <img width="8" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" />
+ </td> 
+ <td width="2"
+
+>
+ <img width="2" height="15" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s_blue.gif" />
+ </td> 
+ <td width="8" rowspan="2"
+
+>
+ <img width="8" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" />
+ </td> 
+ <td
+
+>
+ <a href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=AV0ITHL374OZSWEXOEMXDURYANWA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fsite-directory%2Fref%3Dpe_150770_28281580_pe_dir_gw%2F" style="font-family:arial,verdana,sans-serif; font-size:12px; color:#004B91; text-decoration:none; font-weight: bold;">See All Departments</a>
+ </td>
+ <td width="8" rowspan="2"
+
+>
+ <img width="8" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" />
+ </td> 
+ </tr>
+ </table>
+ </td>
+ </tr
+
+>
+ <tr>
+ <td width="650" colspan="2">
+ <img width="650" height="10" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" />
+ </td>
+ </tr
+
+>
+ <tr>
+ <td width="650" colspan="2">
+ <img width="650" height="2" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/dotted_line.gif" />
+ </td>
+ </tr>
+ </table>
+ </td>
+ </tr
+
+>
+
+
+<tr>
+    	<td width="650">
+        	<table width="650" cellpadding="0" cellspacing="0"
+
+>
+            	<tr>
+                    <td width="650" colspan="4"
+
+>
+                        <img width="650" height="8" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" />
+                    </td>                	
+                </tr
+
+>
+                <tr>
+<!-- greeter text -->
+                    <td width="8"
+
+>
+                        <img width="8" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" />
+                    </td>                    
+                    <td
+
+>
+                    	<table cellpadding="0" cellspacing="0">
+                        	<tr
+
+>
+								<td align="left" valign="center" id="maincopy"><font face="verdana,arial,sans-serif" size="1" color="#333333" style="font-family: verdana,arial,sans-serif; font-size: 11px; color: #333333; line-height: 16px;"
+
+>
+                            Dear Amazon.com Customer, 
+                            <br><br>Customers who have shown an interest in Kindle Fire apps might like to know about our best-selling movie apps in time for Hollywood's biggest night.
+  
+                        		</td>
+                            </tr
+
+>
+                            <tr>
+                                <td
+
+>
+                                    <img height="20" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" />
+                                </td>                            
+                            </tr
+
+>
+                            <tr>
+                            	<td
+
+>
+                                    <table cellpadding="0" cellspacing="0" height="27"
+
+>
+                                        <tr>
+                                            <td width="10" height="27"
+
+><img style=display:block src="http://g-ecx.images-amazon.com/images/G/01/email/bl.gif" width="10" height="27" />
+                                            </td> 
+                                            <td align="left" valign="top"
+
+>
+                                                <table cellpadding="0" cellspacing="0"
+
+>
+                                                    <tr>
+                                                        <td height="2" bgcolor="#1C408B"
+
+><img style=display:block src="http://g-ec2.images-amazon.com/images/G/01/correios/1002_halloween/spacer.gif" width="1" height="2">
+                                                        </td> 
+                                                    </tr
+
+>
+                                                    <tr>
+                                                        <td height="23" bgcolor="#FFC435" background="http://g-ecx.images-amazon.com/images/G/01/email/bg2.gif" valign="middle" nowrap style="font-family: verdana;font-size: 12px;"
+
+>&nbsp;<a rel="nofollow" href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=OMRYIMENLNWPAYIGAGYOFJSEJFQA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fsearch%2Fref%3Dpe_150770_28281580_pe_button%2F%3Frh%3Di%253Amobile-apps%252Cn%253A2350149011%252Cp_n_feature_two_browse-bin%253A3305698011%26bbn%3D2350149011%26hidden-keywords%3DB005ZXWMUS%257CB0066TUXU6%257CB0089BPEZS%257CB004HXHVZ8%257CB008XAKC98%257CB006P57MUK%257CB0093QQAEM%257CB004GISARW%257CB006PKXB6Y%257CB0099F3DPQ%257CB00AQ32OS2%257CB00AOA9BL0%257CB007SYXJXG%257CB004I125GO%26ie%3DUTF8" style="font-family: verdana; font-weight: bold; font-size: 13px;; color: #000066; text-decoration: none;font-size: 12px;">Learn more</a>&nbsp;&nbsp;
+                                                        </td>	
+                                                    </tr
+
+>
+                                                    
+                                                    <tr>
+                                                        <td height="2" bgcolor="#1C408B"
+
+><img style=display:block src="http://g-ec2.images-amazon.com/images/G/01/correios/1002_halloween/spacer.gif" width="1" height="2">
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td width="10" height="27"
+
+><img style=display:block src="http://g-ecx.images-amazon.com/images/G/01/email/bl_right.gif" width="10" height="27" />
+                                            </td>
+                                        </tr>
+                                    </table>                                
+                                </td>
+                            </tr>
+                        </table>
+                    </td>                   
+                    <td width="8"
+
+><img width="8" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" />
+                    </td>
+<!-- /greeter text --> 
+
+<!-- greeter image -->
+                    <td valign="top" align="right"
+
+><a href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=KQAAG2GAYAMALNX5F7TUO13IXTOA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fproduct%2Fref%3Dpe_150770_28281580_pe_hero%2F%3FASIN%3DB005ZXWMUS"
+
+><img style="display:block;" src="http://ecx.images-amazon.com/images/I/31hx4yW3BqL._SL150.png" alt="Netflix" border="0"/></a>
+                    </td>                    
+                </tr
+
+>
+            	<tr>
+                    <td width="650" colspan="4"><img width="650" height="8" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" />
+                    </td>                	
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+
+<!-- first row headline -->
+	<tr
+
+>
+    	<td width="650">
+        	<img width="650" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/rounded_corner_top_08.gif" />
+        </td>
+    </tr
+
+>
+	<tr>
+    	<td>
+        	<table cellpadding="0" cellspacing="0" height="20"
+
+>
+            	<tr>
+                	<td bgcolor="#CAE1F3" width="2"></td>
+                	<td width="10"
+
+><img width="10" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" />
+                    </td>
+ 					<td width="626" height="16"
+
+>
+                                	<table cellpadding="0" cellspacing="0"
+
+>
+                                    	<tr>
+                                        	<td valign="middle"><a href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=OC8H4KBAIITTMBV2U3HFOLDPAB0A&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fsearch%2Fref%3Dpe_150770_28281580_pe_hdr%2F%3Frh%3Di%253Amobile-apps%252Cn%253A2350149011%252Cp_n_feature_two_browse-bin%253A3305698011%26bbn%3D2350149011%26hidden-keywords%3DB005ZXWMUS%257CB0066TUXU6%257CB0089BPEZS%257CB004HXHVZ8%257CB008XAKC98%257CB006P57MUK%257CB0093QQAEM%257CB004GISARW%257CB006PKXB6Y%257CB0099F3DPQ%257CB00AQ32OS2%257CB00AOA9BL0%257CB007SYXJXG%257CB004I125GO%26ie%3DUTF8" style="font-family:verdana,arial, helvetica, sans-serif; font-size:16px; color:#E47911;text-decoration: none;"
+
+><b>Best-Selling Movie Apps</b></a></td>
+                                           	<td width="15" valign="bottom"
+
+><img width="20" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" />
+                    						</td>
+                                            <td valign="middle"
+
+><img style=display:block src="http://g-ecx.images-amazon.com/images/G/01/email/a4.gif" width="10" height="13" /></td>    
+                                            <td valign="middle"
+
+><a href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=CWPHIT751JTXGOHY2H7XJDTXBUUA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fsearch%2Fref%3Dpe_150770_28281580_pe_r1_ptr%2F%3Frh%3Di%253Amobile-apps%252Cn%253A2350149011%252Cp_n_feature_two_browse-bin%253A3305698011%26bbn%3D2350149011%26hidden-keywords%3DB005ZXWMUS%257CB0066TUXU6%257CB0089BPEZS%257CB004HXHVZ8%257CB008XAKC98%257CB006P57MUK%257CB0093QQAEM%257CB004GISARW%257CB006PKXB6Y%257CB0099F3DPQ%257CB00AQ32OS2%257CB00AOA9BL0%257CB007SYXJXG%257CB004I125GO%26ie%3DUTF8" style="font-family:verdana,arial, helvetica, sans-serif; font-size:11px; color:#004B91;text-decoration: underline;">See more</a></td>
+                                        </tr>
+                                    </table>
+                                </td>                 
+                	<td width="10"
+
+><img width="10" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" />
+                    </td>
+                    <td bgcolor="#CAE1F3" width="2"></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+<!-- /first row headline -->
+
+
+
+
+<!-- ASIN row -->
+<tr
+
+>
+ <td>
+ <table cellpadding="0" cellspacing="0">
+ <tr>
+ <td bgcolor="#CAE1F3" width="2"></td>
+ <td width="646"
+
+><img width="646" height="18" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" />
+ </td> 
+ <td bgcolor="#CAE1F3" width="2"></td>
+ </tr>
+ </table>
+ </td>
+ </tr
+
+>
+ <tr>
+ <td>
+ <table cellpadding="0" cellspacing="0">
+ <td bgcolor="#CAE1F3" width="2"></td>
+ <td width="16"
+
+><img width="16" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" /></td> 
+<td width="143" align="center"
+
+>
+ <a rel="nofollow" href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=YVSASETTPIXPLMEIAADFGNOGTJAA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fproduct%2Fref%3Dpe_150770_28281580_pe_b1%2F%3FASIN%3DB0066TUXU6"
+
+><img border="0" src="http://ecx.images-amazon.com/images/I/51u55N5Qd8L._SL110.png" alt="Hulu Plus (Kindle Tablet Edition)"/></a>
+ </td>
+ <td width="14"
+
+><img width="14" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" /></td> 
+<td width="143" align="center"
+
+>
+ <a rel="nofollow" href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=BAGYD93UUINXELSVOIPWXLLOF5QA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fproduct%2Fref%3Dpe_150770_28281580_pe_b2%2F%3FASIN%3DB0089BPEZS"
+
+><img border="0" src="http://ecx.images-amazon.com/images/I/61BOkmesebL._SL110.png" alt="HBO GO (Kindle Tablet Edition)"/></a>
+ </td>
+ <td width="14"
+
+><img width="14" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" /></td> 
+<td width="143" align="center"
+
+>
+ <a rel="nofollow" href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=IJNL9PFAIUYXQNGLI9Z9ZU5AVJQA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fproduct%2Fref%3Dpe_150770_28281580_pe_b3%2F%3FASIN%3DB004HXHVZ8"
+
+><img border="0" src="http://ecx.images-amazon.com/images/I/81Q%2Bpa7DiGL._SL110.png" alt="Movies by Flixster"/></a>
+ </td>
+ <td width="14"
+
+><img width="14" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" /></td> 
+<td width="143" align="center"
+
+>
+ <a rel="nofollow" href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=YR0SSJZQSGALMMNMYBIXPRIH5WQA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fproduct%2Fref%3Dpe_150770_28281580_pe_b4%2F%3FASIN%3DB008XAKC98"
+
+><img border="0" src="http://ecx.images-amazon.com/images/I/71F5cD8jLuL._SL110.png" alt="Crackle"/></a>
+ </td>
+ <td width="16"
+
+><img width="16" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" /></td> 
+ <td bgcolor="#CAE1F3" width="2"></td>
+ </table>
+ </td>
+ </tr
+
+>
+<tr>
+ <td>
+ <table cellpadding="0" cellspacing="0">
+ <tr>
+ <td bgcolor="#CAE1F3" width="2"></td>
+ <td width="646"
+
+><img width="646" height="4" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" />
+ </td> 
+ <td bgcolor="#CAE1F3" width="2"></td>
+ </tr>
+ </table>
+ </td>
+ </tr
+
+>
+ <tr>
+ <td>
+ <table cellpadding="0" cellspacing="0">
+ <td bgcolor="#CAE1F3" width="2"></td>
+ <td width="16"
+
+><img width="16" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" /></td> 
+<td width="143" align="center" valign="top"
+
+><a rel="nofollow" href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=YVSASETTPIXPLMEIAADFGNOGTJAA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fproduct%2Fref%3Dpe_150770_28281580_pe_b1%2F%3FASIN%3DB0066TUXU6" style="font-family:verdana,arial,helvetica;color:#004B91;line-height:1.3;font-size: 11px;text-decoration:none;">Hulu Plus (Kindle Tablet Edition)</a></td>
+ <td width="14"
+
+><img width="14" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" /></td> 
+<td width="143" align="center" valign="top"
+
+><a rel="nofollow" href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=BAGYD93UUINXELSVOIPWXLLOF5QA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fproduct%2Fref%3Dpe_150770_28281580_pe_b2%2F%3FASIN%3DB0089BPEZS" style="font-family:verdana,arial,helvetica;color:#004B91;line-height:1.3;font-size: 11px;text-decoration:none;">HBO GO (Kindle Tablet Edition)</a></td>
+ <td width="14"
+
+><img width="14" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" /></td> 
+<td width="143" align="center" valign="top"
+
+><a rel="nofollow" href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=IJNL9PFAIUYXQNGLI9Z9ZU5AVJQA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fproduct%2Fref%3Dpe_150770_28281580_pe_b3%2F%3FASIN%3DB004HXHVZ8" style="font-family:verdana,arial,helvetica;color:#004B91;line-height:1.3;font-size: 11px;text-decoration:none;">Movies by Flixster</a></td>
+ <td width="14"
+
+><img width="14" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" /></td> 
+<td width="143" align="center" valign="top"
+
+><a rel="nofollow" href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=YR0SSJZQSGALMMNMYBIXPRIH5WQA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fproduct%2Fref%3Dpe_150770_28281580_pe_b4%2F%3FASIN%3DB008XAKC98" style="font-family:verdana,arial,helvetica;color:#004B91;line-height:1.3;font-size: 11px;text-decoration:none;">Crackle</a></td>
+ <td width="16"
+
+><img width="16" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" /></td> 
+ <td bgcolor="#CAE1F3" width="2"></td>
+ </table>
+ </td>
+ </tr
+
+>
+<tr>
+ <td>
+ <table cellpadding="0" cellspacing="0">
+ <tr>
+ <td bgcolor="#CAE1F3" width="2"></td>
+ <td width="646"
+
+><img width="646" height="18" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" />
+ </td> 
+ <td bgcolor="#CAE1F3" width="2"></td>
+ </tr>
+ </table>
+ </td>
+ </tr>
+<!-- /ASIN row -->
+
+
+<!-- headline -->
+	<tr
+
+>
+    	<td>
+        	<table cellpadding="0" cellspacing="0">
+            	<tr
+
+>
+                    <td width="2" bgcolor="#CAE1F3"><img width="2" height="2" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s_blue.gif" /></td>
+                    <td width="1"
+
+><img width="1" height="2" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" /></td>
+                    <td width="644" bgcolor="#CAE1F3"
+
+><img width="644" height="2" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s_blue.gif" /></td>   
+                    <td width="1"
+
+><img width="1" height="2" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" /></td> 
+                    <td width="2" bgcolor="#CAE1F3"
+
+><img width="2" height="2" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s_blue.gif" /></td>            
+                </tr>
+            </table>
+        </td>
+    </tr
+
+>
+	<tr>
+    	<td>
+        	<table cellpadding="0" cellspacing="0" height="32"
+
+>
+            	<tr>
+                	<td width="2" bgcolor="#CAE1F3"><img width="2" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s_blue.gif" />
+                    </td>
+                	<td width="1"
+
+><img width="1" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" />
+                    </td>
+                	<td width="9" valign="bottom" background="http://g-ecx.images-amazon.com/images/G/01/email/headline_gradient_bg_02.gif"
+
+><img width="10" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" />
+                    </td>
+                    <td
+
+>
+                    	<table cellpadding="0" cellspacing="0">
+                            <tr
+
+>
+                                <td width="624" height="33" background="http://g-ecx.images-amazon.com/images/G/01/email/headline_gradient_bg_02.gif"
+
+>
+                                	<table cellpadding="0" cellspacing="0">
+<tr
+
+>
+                                        	<td valign="middle"><a href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=BIZDYURZKSKOBSPPRL1O6GBIEHYA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fsearch%2Fref%3Dpe_150770_28281580_pe_hdr%2F%3Frh%3Di%253Amobile-apps%252Cn%253A2350149011%252Cp_n_date%253A2479571011%252Cp_n_feature_two_browse-bin%253A3305698011%26bbn%3D2350149011%26ie%3DUTF8" style="font-family:verdana,arial, helvetica, sans-serif; font-size:16px; color:#E47911;text-decoration: none;"
+
+><b>Featured New Releases</b></a></td>
+                                           	<td width="15" valign="bottom"
+
+><img width="20" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" />
+                    						</td>
+                                            <td valign="middle"
+
+><img style=display:block src="http://g-ecx.images-amazon.com/images/G/01/email/a4.gif" width="10" height="13" /></td>    
+                                            <td valign="middle"
+
+><a href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=WBXI12MW5NSPEOKLGLHPTZBIOR4A&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fsearch%2Fref%3Dpe_150770_28281580_pe_r1_ptr%2F%3Frh%3Di%253Amobile-apps%252Cn%253A2350149011%252Cp_n_date%253A2479571011%252Cp_n_feature_two_browse-bin%253A3305698011%26bbn%3D2350149011%26ie%3DUTF8" style="font-family:verdana,arial, helvetica, sans-serif; font-size:11px; color:#004B91;text-decoration: underline;">See more</a></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>   
+                	<td width="9" valign="bottom" background="http://g-ecx.images-amazon.com/images/G/01/email/headline_gradient_bg_02.gif"
+
+><img width="10" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" />
+                    </td>                    
+                	<td width="1"
+
+><img width="1" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" />
+                    </td>
+                	<td width="2" bgcolor="#CAE1F3"
+
+><img width="2" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s_blue.gif" />
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+<!-- /headline -->
+
+
+<!-- ASIN row -->
+<tr
+
+>
+ <td>
+ <table cellpadding="0" cellspacing="0">
+ <tr>
+ <td bgcolor="#CAE1F3" width="2"></td>
+ <td width="646"
+
+><img width="646" height="18" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" />
+ </td> 
+ <td bgcolor="#CAE1F3" width="2"></td>
+ </tr>
+ </table>
+ </td>
+ </tr
+
+>
+ <tr>
+ <td>
+ <table cellpadding="0" cellspacing="0">
+ <td bgcolor="#CAE1F3" width="2"></td>
+ <td width="16"
+
+><img width="16" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" /></td> 
+<td width="143" align="center"
+
+>
+ <a rel="nofollow" href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=0C07XVE57GDEIYUZAGEA95SM9KQA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fproduct%2Fref%3Dpe_150770_28281580_pe_b1%2F%3FASIN%3DB00B29J0I6"
+
+><img border="0" src="http://ecx.images-amazon.com/images/I/71OwLuAOBtL._SL110.png" alt="Rescue Roby"/></a>
+ </td>
+ <td width="14"
+
+><img width="14" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" /></td> 
+<td width="143" align="center"
+
+>
+ <a rel="nofollow" href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=AKNBLTA1G1DJC56WY0SORYGK62WA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fproduct%2Fref%3Dpe_150770_28281580_pe_b2%2F%3FASIN%3DB00B2AKMFU"
+
+><img border="0" src="http://ecx.images-amazon.com/images/I/81X8sSkShuL._SL110.png" alt="Shaman Doctor"/></a>
+ </td>
+ <td width="14"
+
+><img width="14" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" /></td> 
+<td width="143" align="center"
+
+>
+ <a rel="nofollow" href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=JNIPIUCNJCL0IEU59LL9NR9S6XKA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fproduct%2Fref%3Dpe_150770_28281580_pe_b3%2F%3FASIN%3DB00B49Z8TY"
+
+><img border="0" src="http://ecx.images-amazon.com/images/I/A1zkNdZrx1L._SL110.png" alt="Teen Vogue Me Girl (Kindle Tablet Edition)"/></a>
+ </td>
+ <td width="14"
+
+><img width="14" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" /></td> 
+<td width="143" align="center"
+
+>
+ <a rel="nofollow" href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=SPWARPNABU5ICDZKPWTOX9OQBU4A&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fproduct%2Fref%3Dpe_150770_28281580_pe_b4%2F%3FASIN%3DB009ZJQCW2"
+
+><img border="0" src="http://ecx.images-amazon.com/images/I/81pfO-ESV3L._SL110.png" alt="Miss Spider's Bedtime Story"/></a>
+ </td>
+ <td width="16"
+
+><img width="16" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" /></td> 
+ <td bgcolor="#CAE1F3" width="2"></td>
+ </table>
+ </td>
+ </tr
+
+>
+<tr>
+ <td>
+ <table cellpadding="0" cellspacing="0">
+ <tr>
+ <td bgcolor="#CAE1F3" width="2"></td>
+ <td width="646"
+
+><img width="646" height="4" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" />
+ </td> 
+ <td bgcolor="#CAE1F3" width="2"></td>
+ </tr>
+ </table>
+ </td>
+ </tr
+
+>
+ <tr>
+ <td>
+ <table cellpadding="0" cellspacing="0">
+ <td bgcolor="#CAE1F3" width="2"></td>
+ <td width="16"
+
+><img width="16" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" /></td> 
+<td width="143" align="center" valign="top"
+
+><a rel="nofollow" href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=0C07XVE57GDEIYUZAGEA95SM9KQA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fproduct%2Fref%3Dpe_150770_28281580_pe_b1%2F%3FASIN%3DB00B29J0I6" style="font-family:verdana,arial,helvetica;color:#004B91;line-height:1.3;font-size: 11px;text-decoration:none;">Rescue Roby</a></td>
+ <td width="14"
+
+><img width="14" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" /></td> 
+<td width="143" align="center" valign="top"
+
+><a rel="nofollow" href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=AKNBLTA1G1DJC56WY0SORYGK62WA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fproduct%2Fref%3Dpe_150770_28281580_pe_b2%2F%3FASIN%3DB00B2AKMFU" style="font-family:verdana,arial,helvetica;color:#004B91;line-height:1.3;font-size: 11px;text-decoration:none;">Shaman Doctor</a></td>
+ <td width="14"
+
+><img width="14" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" /></td> 
+<td width="143" align="center" valign="top"
+
+><a rel="nofollow" href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=JNIPIUCNJCL0IEU59LL9NR9S6XKA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fproduct%2Fref%3Dpe_150770_28281580_pe_b3%2F%3FASIN%3DB00B49Z8TY" style="font-family:verdana,arial,helvetica;color:#004B91;line-height:1.3;font-size: 11px;text-decoration:none;">Teen Vogue Me Girl (Kindle Tablet Edition)</a></td>
+ <td width="14"
+
+><img width="14" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" /></td> 
+<td width="143" align="center" valign="top"
+
+><a rel="nofollow" href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=SPWARPNABU5ICDZKPWTOX9OQBU4A&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fproduct%2Fref%3Dpe_150770_28281580_pe_b4%2F%3FASIN%3DB009ZJQCW2" style="font-family:verdana,arial,helvetica;color:#004B91;line-height:1.3;font-size: 11px;text-decoration:none;">Miss Spider's Bedtime Story</a></td>
+ <td width="16"
+
+><img width="16" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" /></td> 
+ <td bgcolor="#CAE1F3" width="2"></td>
+ </table>
+ </td>
+ </tr
+
+>
+<tr>
+ <td>
+ <table cellpadding="0" cellspacing="0">
+ <tr>
+ <td bgcolor="#CAE1F3" width="2"></td>
+ <td width="646"
+
+><img width="646" height="18" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" />
+ </td> 
+ <td bgcolor="#CAE1F3" width="2"></td>
+ </tr>
+ </table>
+ </td>
+ </tr>
+<!-- /ASIN row -->
+
+
+<!-- headline -->
+	<tr
+
+>
+    	<td>
+        	<table cellpadding="0" cellspacing="0">
+            	<tr
+
+>
+                    <td width="2" bgcolor="#CAE1F3"><img width="2" height="2" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s_blue.gif" /></td>
+                    <td width="1"
+
+><img width="1" height="2" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" /></td>
+                    <td width="644" bgcolor="#CAE1F3"
+
+><img width="644" height="2" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s_blue.gif" /></td>   
+                    <td width="1"
+
+><img width="1" height="2" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" /></td> 
+                    <td width="2" bgcolor="#CAE1F3"
+
+><img width="2" height="2" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s_blue.gif" /></td>            
+                </tr>
+            </table>
+        </td>
+    </tr
+
+>
+	<tr>
+    	<td>
+        	<table cellpadding="0" cellspacing="0" height="32"
+
+>
+            	<tr>
+                	<td width="2" bgcolor="#CAE1F3"><img width="2" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s_blue.gif" />
+                    </td>
+                	<td width="1"
+
+><img width="1" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" />
+                    </td>
+                	<td width="9" valign="bottom" background="http://g-ecx.images-amazon.com/images/G/01/email/headline_gradient_bg_02.gif"
+
+><img width="10" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" />
+                    </td>
+                    <td
+
+>
+                    	<table cellpadding="0" cellspacing="0">
+                            <tr
+
+>
+                                <td width="624" height="33" background="http://g-ecx.images-amazon.com/images/G/01/email/headline_gradient_bg_02.gif"
+
+>
+                                	<table cellpadding="0" cellspacing="0">
+<tr
+
+>
+                                        	<td valign="middle"><a href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=N5RI8QHQIELVEUW0VIHXEA3II6YA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fsearch%2Fref%3Dpe_150770_28281580_pe_hdr%2F%3Frh%3Di%253Amobile-apps%252Cn%253A2350149011%252Cp_4%253APBS%2520KIDS%252Cp_n_feature_two_browse-bin%253A3305698011%26bbn%3D2350149011%26ie%3DUTF8" style="font-family:verdana,arial, helvetica, sans-serif; font-size:16px; color:#E47911;text-decoration: none;"
+
+><b>Featured PBS Kids Apps</b></a></td>
+                                           	<td width="15" valign="bottom"
+
+><img width="20" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" />
+                    						</td>
+                                            <td valign="middle"
+
+><img style=display:block src="http://g-ecx.images-amazon.com/images/G/01/email/a4.gif" width="10" height="13" /></td>    
+                                            <td valign="middle"
+
+><a href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=YV4UVAN81BZDYNL3JOPQXVFEML8A&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fsearch%2Fref%3Dpe_150770_28281580_pe_r1_ptr%2F%3Frh%3Di%253Amobile-apps%252Cn%253A2350149011%252Cp_4%253APBS%2520KIDS%252Cp_n_feature_two_browse-bin%253A3305698011%26bbn%3D2350149011%26ie%3DUTF8" style="font-family:verdana,arial, helvetica, sans-serif; font-size:11px; color:#004B91;text-decoration: underline;">See more</a></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>   
+                	<td width="9" valign="bottom" background="http://g-ecx.images-amazon.com/images/G/01/email/headline_gradient_bg_02.gif"
+
+><img width="10" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" />
+                    </td>                    
+                	<td width="1"
+
+><img width="1" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" />
+                    </td>
+                	<td width="2" bgcolor="#CAE1F3"
+
+><img width="2" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s_blue.gif" />
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+<!-- /headline -->
+
+
+<!-- ASIN row -->
+<tr
+
+>
+ <td>
+ <table cellpadding="0" cellspacing="0">
+ <tr>
+ <td bgcolor="#CAE1F3" width="2"></td>
+ <td width="646"
+
+><img width="646" height="18" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" />
+ </td> 
+ <td bgcolor="#CAE1F3" width="2"></td>
+ </tr>
+ </table>
+ </td>
+ </tr
+
+>
+ <tr>
+ <td>
+ <table cellpadding="0" cellspacing="0">
+ <td bgcolor="#CAE1F3" width="2"></td>
+ <td width="16"
+
+><img width="16" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" /></td> 
+<td width="143" align="center"
+
+>
+ <a rel="nofollow" href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=TGRQZY1A2E0CAUOYAIFDQDUKWV0A&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fproduct%2Fref%3Dpe_150770_28281580_pe_b1%2F%3FASIN%3DB00BBFOMWU"
+
+><img border="0" src="http://ecx.images-amazon.com/images/I/71ZuC%2BxX6AL._SL110.png" alt="The Electric Company Party Game: Lost on Prankster Planet (Kindle Tablet Edition)"/></a>
+ </td>
+ <td width="14"
+
+><img width="14" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" /></td> 
+<td width="143" align="center"
+
+>
+ <a rel="nofollow" href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=XEN6CPEQPM7QASFHCSXASJLOTNGA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fproduct%2Fref%3Dpe_150770_28281580_pe_b2%2F%3FASIN%3DB00BBF4NX8"
+
+><img border="0" src="http://ecx.images-amazon.com/images/I/71jypVtn3hL._SL110.png" alt="SUPER WHY ABC Adventures: Alphabet (Kindle Tablet Edition)"/></a>
+ </td>
+ <td width="14"
+
+><img width="14" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" /></td> 
+<td width="143" align="center"
+
+>
+ <a rel="nofollow" href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=X4R197YTLGU3TOX8WCMRHTFLBAUA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fproduct%2Fref%3Dpe_150770_28281580_pe_b3%2F%3FASIN%3DB009S984J8"
+
+><img border="0" src="http://ecx.images-amazon.com/images/I/81Fy7UF6EyL._SL110.png" alt="Daniel Tiger's Neighborhood: Play at Home with Daniel"/></a>
+ </td>
+ <td width="14"
+
+><img width="14" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" /></td> 
+<td width="143" align="center"
+
+>
+ <a rel="nofollow" href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=YG8LDASPAQTH4PT3TKGCVSE0LBGA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fproduct%2Fref%3Dpe_150770_28281580_pe_b4%2F%3FASIN%3DB009TAGRU4"
+
+><img border="0" src="http://ecx.images-amazon.com/images/I/71Spcsp6lHL._SL110.png" alt="Dinosaur Train Mesozoic Math Adventures (Kindle Tablet Edition)"/></a>
+ </td>
+ <td width="16"
+
+><img width="16" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" /></td> 
+ <td bgcolor="#CAE1F3" width="2"></td>
+ </table>
+ </td>
+ </tr
+
+>
+<tr>
+ <td>
+ <table cellpadding="0" cellspacing="0">
+ <tr>
+ <td bgcolor="#CAE1F3" width="2"></td>
+ <td width="646"
+
+><img width="646" height="4" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" />
+ </td> 
+ <td bgcolor="#CAE1F3" width="2"></td>
+ </tr>
+ </table>
+ </td>
+ </tr
+
+>
+ <tr>
+ <td>
+ <table cellpadding="0" cellspacing="0">
+ <td bgcolor="#CAE1F3" width="2"></td>
+ <td width="16"
+
+><img width="16" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" /></td> 
+<td width="143" align="center" valign="top"
+
+><a rel="nofollow" href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=TGRQZY1A2E0CAUOYAIFDQDUKWV0A&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fproduct%2Fref%3Dpe_150770_28281580_pe_b1%2F%3FASIN%3DB00BBFOMWU" style="font-family:verdana,arial,helvetica;color:#004B91;line-height:1.3;font-size: 11px;text-decoration:none;">The Electric Company Party Game: Lost on Prankster Planet (Kindle Tablet Edition)</a></td>
+ <td width="14"
+
+><img width="14" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" /></td> 
+<td width="143" align="center" valign="top"
+
+><a rel="nofollow" href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=XEN6CPEQPM7QASFHCSXASJLOTNGA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fproduct%2Fref%3Dpe_150770_28281580_pe_b2%2F%3FASIN%3DB00BBF4NX8" style="font-family:verdana,arial,helvetica;color:#004B91;line-height:1.3;font-size: 11px;text-decoration:none;">SUPER WHY ABC Adventures: Alphabet (Kindle Tablet Edition)</a></td>
+ <td width="14"
+
+><img width="14" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" /></td> 
+<td width="143" align="center" valign="top"
+
+><a rel="nofollow" href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=X4R197YTLGU3TOX8WCMRHTFLBAUA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fproduct%2Fref%3Dpe_150770_28281580_pe_b3%2F%3FASIN%3DB009S984J8" style="font-family:verdana,arial,helvetica;color:#004B91;line-height:1.3;font-size: 11px;text-decoration:none;">Daniel Tiger's Neighborhood: Play at Home with Daniel</a></td>
+ <td width="14"
+
+><img width="14" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" /></td> 
+<td width="143" align="center" valign="top"
+
+><a rel="nofollow" href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=YG8LDASPAQTH4PT3TKGCVSE0LBGA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fproduct%2Fref%3Dpe_150770_28281580_pe_b4%2F%3FASIN%3DB009TAGRU4" style="font-family:verdana,arial,helvetica;color:#004B91;line-height:1.3;font-size: 11px;text-decoration:none;">Dinosaur Train Mesozoic Math Adventures (Kindle Tablet Edition)</a></td>
+ <td width="16"
+
+><img width="16" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" /></td> 
+ <td bgcolor="#CAE1F3" width="2"></td>
+ </table>
+ </td>
+ </tr
+
+>
+<tr>
+ <td>
+ <table cellpadding="0" cellspacing="0">
+ <tr>
+ <td bgcolor="#CAE1F3" width="2"></td>
+ <td width="646"
+
+><img width="646" height="18" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" />
+ </td> 
+ <td bgcolor="#CAE1F3" width="2"></td>
+ </tr>
+ </table>
+ </td>
+ </tr>
+<!-- /ASIN row -->
+
+
+<!-- headline -->
+	<tr
+
+>
+    	<td>
+        	<table cellpadding="0" cellspacing="0">
+            	<tr
+
+>
+                    <td width="2" bgcolor="#CAE1F3"><img width="2" height="2" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s_blue.gif" /></td>
+                    <td width="1"
+
+><img width="1" height="2" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" /></td>
+                    <td width="644" bgcolor="#CAE1F3"
+
+><img width="644" height="2" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s_blue.gif" /></td>   
+                    <td width="1"
+
+><img width="1" height="2" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" /></td> 
+                    <td width="2" bgcolor="#CAE1F3"
+
+><img width="2" height="2" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s_blue.gif" /></td>            
+                </tr>
+            </table>
+        </td>
+    </tr
+
+>
+	<tr>
+    	<td>
+        	<table cellpadding="0" cellspacing="0" height="32"
+
+>
+            	<tr>
+                	<td width="2" bgcolor="#CAE1F3"><img width="2" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s_blue.gif" />
+                    </td>
+                	<td width="1"
+
+><img width="1" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" />
+                    </td>
+                	<td width="9" valign="bottom" background="http://g-ecx.images-amazon.com/images/G/01/email/headline_gradient_bg_02.gif"
+
+><img width="10" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" />
+                    </td>
+                    <td
+
+>
+                    	<table cellpadding="0" cellspacing="0">
+                            <tr
+
+>
+                                <td width="624" height="33" background="http://g-ecx.images-amazon.com/images/G/01/email/headline_gradient_bg_02.gif"
+
+>
+                                	<table cellpadding="0" cellspacing="0">
+<tr
+
+>
+                                        	<td valign="middle"><a href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=M7XTXHYUJDLMMHENTRBT0HCUBA0A&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Ffeature.html%2Fref%3Dpe_150770_28281580_pe_hdr%2F%3FdocId%3D1000620471%26ie%3DUTF8" style="font-family:verdana,arial, helvetica, sans-serif; font-size:16px; color:#E47911;text-decoration: none;"
+
+><b>Up to 50% Off Select Games</b></a></td>
+                                           	<td width="15" valign="bottom"
+
+><img width="20" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" />
+                    						</td>
+                                            <td valign="middle"
+
+><img style=display:block src="http://g-ecx.images-amazon.com/images/G/01/email/a4.gif" width="10" height="13" /></td>    
+                                            <td valign="middle"
+
+><a href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=PY32M5WXQZGJALACE1CAAJIHZAAA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Ffeature.html%2Fref%3Dpe_150770_28281580_pe_r1_ptr%2F%3FdocId%3D1000620471%26ie%3DUTF8" style="font-family:verdana,arial, helvetica, sans-serif; font-size:11px; color:#004B91;text-decoration: underline;">See more</a></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>   
+                	<td width="9" valign="bottom" background="http://g-ecx.images-amazon.com/images/G/01/email/headline_gradient_bg_02.gif"
+
+><img width="10" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" />
+                    </td>                    
+                	<td width="1"
+
+><img width="1" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" />
+                    </td>
+                	<td width="2" bgcolor="#CAE1F3"
+
+><img width="2" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s_blue.gif" />
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+<!-- /headline -->
+
+
+<!-- ASIN row -->
+<tr
+
+>
+ <td>
+ <table cellpadding="0" cellspacing="0">
+ <tr>
+ <td bgcolor="#CAE1F3" width="2"></td>
+ <td width="646"
+
+><img width="646" height="18" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" />
+ </td> 
+ <td bgcolor="#CAE1F3" width="2"></td>
+ </tr>
+ </table>
+ </td>
+ </tr
+
+>
+ <tr>
+ <td>
+ <table cellpadding="0" cellspacing="0">
+ <td bgcolor="#CAE1F3" width="2"></td>
+ <td width="16"
+
+><img width="16" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" /></td> 
+<td width="143" align="center"
+
+>
+ <a rel="nofollow" href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=UQPY1C2NLBJPEWD5ZYAIVGLTKLSA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fproduct%2Fref%3Dpe_150770_28281580_pe_b1%2F%3FASIN%3DB008DGEEOG"
+
+><img border="0" src="http://ecx.images-amazon.com/images/I/81TS7GCx-%2BL.__SL110_PE50_OU01_.png" alt="N.O.V.A. 3 - Near Orbit Vanguard Alliance (Kindle Tablet Edition)"/></a>
+ </td>
+ <td width="14"
+
+><img width="14" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" /></td> 
+<td width="143" align="center"
+
+>
+ <a rel="nofollow" href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=FPJZAJKRQKWEVDO2GCAE3Y0ZE0IA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fproduct%2Fref%3Dpe_150770_28281580_pe_b2%2F%3FASIN%3DB00AYJ7X2K"
+
+><img border="0" src="http://ecx.images-amazon.com/images/I/81LZ8cKsvsL._SL110_PE50_OU01_.png" alt="Hidden Objects: Winter Fantasy"/></a>
+ </td>
+ <td width="14"
+
+><img width="14" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" /></td> 
+<td width="143" align="center"
+
+>
+ <a rel="nofollow" href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=LGZG5JG8PKHDVX4HTTVEC3AADCGA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fproduct%2Fref%3Dpe_150770_28281580_pe_b3%2F%3FASIN%3DB00933JF74"
+
+><img border="0" src="http://ecx.images-amazon.com/images/I/817f7S9RFzL._SL110_PE50_OU01_.png" alt="Townsmen Premium"/></a>
+ </td>
+ <td width="14"
+
+><img width="14" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" /></td> 
+<td width="143" align="center"
+
+>
+ <a rel="nofollow" href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=PTNM5T06WVDELLIFV3F3SFDA0VMA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fproduct%2Fref%3Dpe_150770_28281580_pe_b4%2F%3FASIN%3DB008U184U4"
+
+><img border="0" src="http://ecx.images-amazon.com/images/I/81CcL5tdXXL._SL110_PE50_OU01_.png" alt="Hidden Differences: Haunted Mansions"/></a>
+ </td>
+ <td width="16"
+
+><img width="16" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" /></td> 
+ <td bgcolor="#CAE1F3" width="2"></td>
+ </table>
+ </td>
+ </tr
+
+>
+<tr>
+ <td>
+ <table cellpadding="0" cellspacing="0">
+ <tr>
+ <td bgcolor="#CAE1F3" width="2"></td>
+ <td width="646"
+
+><img width="646" height="4" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" />
+ </td> 
+ <td bgcolor="#CAE1F3" width="2"></td>
+ </tr>
+ </table>
+ </td>
+ </tr
+
+>
+ <tr>
+ <td>
+ <table cellpadding="0" cellspacing="0">
+ <td bgcolor="#CAE1F3" width="2"></td>
+ <td width="16"
+
+><img width="16" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" /></td> 
+<td width="143" align="center" valign="top"
+
+><a rel="nofollow" href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=UQPY1C2NLBJPEWD5ZYAIVGLTKLSA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fproduct%2Fref%3Dpe_150770_28281580_pe_b1%2F%3FASIN%3DB008DGEEOG" style="font-family:verdana,arial,helvetica;color:#004B91;line-height:1.3;font-size: 11px;text-decoration:none;">N.O.V.A. 3 - Near Orbit Vanguard Alliance (Kindle Tablet Edition)</a></td>
+ <td width="14"
+
+><img width="14" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" /></td> 
+<td width="143" align="center" valign="top"
+
+><a rel="nofollow" href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=FPJZAJKRQKWEVDO2GCAE3Y0ZE0IA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fproduct%2Fref%3Dpe_150770_28281580_pe_b2%2F%3FASIN%3DB00AYJ7X2K" style="font-family:verdana,arial,helvetica;color:#004B91;line-height:1.3;font-size: 11px;text-decoration:none;">Hidden Objects: Winter Fantasy</a></td>
+ <td width="14"
+
+><img width="14" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" /></td> 
+<td width="143" align="center" valign="top"
+
+><a rel="nofollow" href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=LGZG5JG8PKHDVX4HTTVEC3AADCGA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fproduct%2Fref%3Dpe_150770_28281580_pe_b3%2F%3FASIN%3DB00933JF74" style="font-family:verdana,arial,helvetica;color:#004B91;line-height:1.3;font-size: 11px;text-decoration:none;">Townsmen Premium</a></td>
+ <td width="14"
+
+><img width="14" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" /></td> 
+<td width="143" align="center" valign="top"
+
+><a rel="nofollow" href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=PTNM5T06WVDELLIFV3F3SFDA0VMA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fproduct%2Fref%3Dpe_150770_28281580_pe_b4%2F%3FASIN%3DB008U184U4" style="font-family:verdana,arial,helvetica;color:#004B91;line-height:1.3;font-size: 11px;text-decoration:none;">Hidden Differences: Haunted Mansions</a></td>
+ <td width="16"
+
+><img width="16" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" /></td> 
+ <td bgcolor="#CAE1F3" width="2"></td>
+ </table>
+ </td>
+ </tr
+
+>
+<tr>
+ <td>
+ <table cellpadding="0" cellspacing="0">
+ <tr>
+ <td bgcolor="#CAE1F3" width="2"></td>
+ <td width="646"
+
+><img width="646" height="18" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" />
+ </td> 
+ <td bgcolor="#CAE1F3" width="2"></td>
+ </tr>
+ </table>
+ </td>
+ </tr>
+<!-- /ASIN row -->
+
+
+<!-- bottom rounded corner -->
+	<tr
+
+>
+    	<td width="650">
+			<img width="650" height="5" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/bottom_rounded_corner.gif" />
+        </td>
+    </tr
+
+>
+	<tr>
+    	<td width="650">
+			<img width="650" height="8" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" />
+        </td>
+    </tr>
+<!-- /bottom rounded corner -->
+
+
+<tr
+
+>
+ <td colspan="3"><a href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=WSUSLEWX7I8ZLS8YTAAE7LFY0UEA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fproduct%2Fref%3Dpe_150770_28281580_pe_stripe%2F%3FASIN%3DB004SV7744"
+
+><img style=display:block src="http://g-ec2.images-amazon.com/images/G/01/AmazonMobileApps/sitestripes/apps/venezia_slacker_radio_650x45._V376227521_.gif" border="0" alt="Slacker Radio"/></a></td>
+ </tr
+
+>
+<tr>
+ <td width="650">
+<img width="650" height="8" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" />
+ </td>
+ </tr
+
+>
+
+
+<table width="650" border="0" cellspacing="0" cellpadding="0" align="center"
+
+>
+<tr>
+ <td width="650" colspan="2">
+ <img width="650" height="2" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/dotted_line.gif" />
+ </td>
+ </tr
+
+>
+<tr>
+ <td width="650">
+<img width="650" height="8" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" />
+ </td>
+ </tr
+
+>
+<tr>
+ <td>
+ <table cellpadding="0" cellspacing="0">
+ <tr>
+ <td width="8"
+
+><img width="8" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" /></td>
+ <td width="634"
+
+>
+ <table cellpadding="0" cellspacing="0">
+ <tr>
+ <td width="634"><font face="arial, verdana, sans-serif" size="3" color="#cd6600" style="font-family: arial; font-size: 14px; color: #E47911; line-height: 16px;"
+
+><b>Find Great Deals on Millions of Items Storewide</b></font></td>
+ </tr
+
+>
+ <tr>
+ <td height="8"><img width="1" height="8" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" /></td>
+ </tr
+
+>
+ <tr>
+ <td>
+ <table cellpadding="0" cellspacing="0">
+ <tr>
+ <td>
+ <table cellpadding="0" cellspacing="0"
+
+>
+ <tr>
+ <td valign="top"><img style=display:block src="http://g-ecx.images-amazon.com/images/G/01/email/a4.gif" width="10" height="13" /></td>
+ <td
+
+><a href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=4SJM6VAYX0Q2BNU0NTA3IFDESIWA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fb%2Fref%3Dpe_150770_28281580_pe_lf1%2F%3Fnode%3D283155" style="font-family:verdana,arial,helvetica;color:#004B91;line-height:1.4;font-size: 11px;text-decoration:none;">Books</a></td>
+ </tr
+
+>
+ <tr>
+ <td valign="top"><img style=display:block src="http://g-ecx.images-amazon.com/images/G/01/email/a4.gif" width="10" height="13" /></td>
+ <td
+
+><a href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=BSYTKEWR3JGSCFAIY9ACMHJ0W3KA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fb%2Fref%3Dpe_150770_28281580_pe_lf2%2F%3Fnode%3D130" style="font-family:verdana,arial,helvetica;color:#004B91;line-height:1.4;font-size: 11px;text-decoration:none;">Movies &amp; TV</a></td>
+ </tr
+
+>
+ <tr>
+ <td valign="top"><img style=display:block src="http://g-ecx.images-amazon.com/images/G/01/email/a4.gif" width="10" height="13" /></td>
+ <td
+
+><a href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=A6PWAASC8HONPATWR1GPDJBLIFSA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fproduct%2Fref%3Dpe_150770_28281580_pe_lf3%2F%3FASIN%3DB007HCCNJU" style="font-family:verdana,arial,helvetica;color:#003399;line-height:1.4;font-size: 11px;text-decoration:none;">Kindle</a></td>
+ </tr
+
+>
+ <tr>
+ <td valign="top"><img style=display:block src="http://g-ecx.images-amazon.com/images/G/01/email/a4.gif" width="10" height="13" /></td>
+ <td
+
+><a href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=TZT7YBMUXRDRGLZQWPJGZOT4VOUA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fproduct%2Fref%3Dpe_150770_28281580_pe_lf4%2F%3FASIN%3DB007OZNZG0" style="font-family:verdana,arial,helvetica;color:#003399;line-height:1.4;font-size: 11px;text-decoration:none;">Kindle Paperwhite</a></td>
+ </tr
+
+>
+ <tr>
+ <td valign="top"><img style=display:block src="http://g-ecx.images-amazon.com/images/G/01/email/a4.gif" width="10" height="13" /></td>
+ <td
+
+><a href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=2V2NNAMWY3IJZF9CVDSX7ELPR5AA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fproduct%2Fref%3Dpe_150770_28281580_pe_lf5%2F%3FASIN%3DB0083PWAPW" style="font-family:verdana,arial,helvetica;color:#003399;line-height:1.4;font-size: 11px;text-decoration:none;">Kindle Fire HD</a></td>
+ </tr
+
+>
+ <tr>
+ <td valign="top"><img style=display:block src="http://g-ecx.images-amazon.com/images/G/01/email/a4.gif" width="10" height="13" /></td>
+ <td
+
+><a href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=LNJYNZUN9R0LVDJHIFQRDTFZAGSA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fb%2Fref%3Dpe_150770_28281580_pe_lf6%2F%3Fnode%3D16261631" style="font-family:verdana,arial,helvetica;color:#004B91;line-height:1.4;font-size: 11px;text-decoration:none;">Instant Video</a></td>
+ </tr
+
+>
+ <tr>
+ <td valign="top"><img style=display:block src="http://g-ecx.images-amazon.com/images/G/01/email/a4.gif" width="10" height="13" /></td>
+ <td
+
+><a href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=3GUAVJOPRQTB3DACUUS1YPP9PVGA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fb%2Fref%3Dpe_150770_28281580_pe_lf7%2F%3Fnode%3D5174" style="font-family:verdana,arial,helvetica;color:#004B91;line-height:1.4;font-size: 11px;text-decoration:none;">Music</a></td>
+ </tr
+
+>
+ <tr>
+ <td valign="top"><img style=display:block src="http://g-ecx.images-amazon.com/images/G/01/email/a4.gif" width="10" height="13" /></td>
+ <td
+
+><a href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=LWWBYBYKDONIN4Z04XCQOCARLVWA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fb%2Fref%3Dpe_150770_28281580_pe_lf8%2F%3Fnode%3D163856011" style="font-family:verdana,arial,helvetica;color:#004B91;line-height:1.4;font-size: 11px;text-decoration:none;">MP3 Downloads</a></td>
+ </tr>
+ 
+ </table>
+ </td>
+ <td
+
+><img width="32" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" /></td>
+ <td
+
+>
+ <table cellpadding="0" cellspacing="0">
+ <tr>
+ <td valign="top"><img style=display:block src="http://g-ecx.images-amazon.com/images/G/01/email/a4.gif" width="10" height="13" /></td>
+ <td
+
+><a href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=XOTR2PASRN6DKNVTPP2RT2BAI90A&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fb%2Fref%3Dpe_150770_28281580_pe_lf9%2F%3Fnode%3D172282" style="font-family:verdana,arial,helvetica;color:#004B91;line-height:1.4;font-size: 11px;text-decoration:none;">Electronics</a></td>
+ </tr
+
+>
+ <tr>
+ <td valign="top"><img style=display:block src="http://g-ecx.images-amazon.com/images/G/01/email/a4.gif" width="10" height="13" /></td>
+ <td
+
+><a href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=Y93DAK1LAOBQUBEI8OFOJN1GPSKA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fb%2Fref%3Dpe_150770_28281580_pe_lf10%2F%3Fnode%3D468642" style="font-family:verdana,arial,helvetica;color:#004B91;line-height:1.4;font-size: 11px;text-decoration:none;">Video Games</a></td>
+ </tr
+
+>
+ <tr>
+ <td valign="top"><img style=display:block src="http://g-ecx.images-amazon.com/images/G/01/email/a4.gif" width="10" height="13" /></td>
+ <td
+
+><a href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=YLMHXSQEAPOPECBB7ZWGGD41DZOA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fb%2Fref%3Dpe_150770_28281580_pe_lf11%2F%3Fnode%3D2335752011" style="font-family:verdana,arial,helvetica;color:#004B91;line-height:1.4;font-size: 11px;text-decoration:none;">Cell Phones &amp; Accessories</a></td>
+ </tr
+
+>
+ <tr>
+ <td valign="top"><img style=display:block src="http://g-ecx.images-amazon.com/images/G/01/email/a4.gif" width="10" height="13" /></td>
+ <td
+
+><a href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=IZRPEEN0EDUNDFZXA6G8GMOKFXEA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fb%2Fref%3Dpe_150770_28281580_pe_lf12%2F%3Fnode%3D541966" style="font-family:verdana,arial,helvetica;color:#004B91;line-height:1.4;font-size: 11px;text-decoration:none;">Computers</a
+
+><font style="font-family:verdana,arial,helvetica;color:#004B91;line-height:1.4;font-size: 11px;"> &amp; </font
+
+><a href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=6TWNLRAD80IRYALEOKJHJZFT0QIA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fb%2Fref%3Dpe_150770_28281580_pe_lf12b%2F%3Fnode%3D229534" style="font-family:verdana,arial,helvetica;color:#004B91;line-height:1.4;font-size: 11px;text-decoration:none;">Software</a></td>
+ </tr
+
+>
+ <tr>
+ <td valign="top"><img style=display:block src="http://g-ecx.images-amazon.com/images/G/01/email/a4.gif" width="10" height="13" /></td>
+ <td
+
+><a href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=GWDNSL2YCSJD0GDPXU4CRAUY5E8A&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fb%2Fref%3Dpe_150770_28281580_pe_lf13%2F%3Fnode%3D3375251" style="font-family:verdana,arial,helvetica;color:#004B91;line-height:1.4;font-size: 11px;text-decoration:none;">Sports &amp; Outdoors</a></td>
+ </tr
+
+>
+ <tr>
+ <td valign="top"><img style=display:block src="http://g-ecx.images-amazon.com/images/G/01/email/a4.gif" width="10" height="13" /></td>
+ <td
+
+><a href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=INHI29A7QSKXGXGJRQDFQBZRXDUA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fb%2Fref%3Dpe_150770_28281580_pe_lf14%2F%3Fnode%3D15684181" style="font-family:verdana,arial,helvetica;color:#004B91;line-height:1.4;font-size: 11px;text-decoration:none;">Automotive</a></td>
+ </tr
+
+>
+ <tr>
+ <td valign="top"><img style=display:block src="http://g-ecx.images-amazon.com/images/G/01/email/a4.gif" width="10" height="13" /></td>
+ <td
+
+><a href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=AS8DXXU6DKEZGRESH5AEKJFVSA0A&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fb%2Fref%3Dpe_150770_28281580_pe_lf15%2F%3Fnode%3D16310091" style="font-family:verdana,arial,helvetica;color:#003399;line-height:1.4;font-size: 11px;text-decoration:none;">Industrial & Scientific</a></td>
+ </tr
+
+>
+ <tr>
+ <td valign="top"><img style=display:block src="http://g-ecx.images-amazon.com/images/G/01/email/a4.gif" width="10" height="13" /></td>
+ <td
+
+><a href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=61PYQAY1TBTRVZRGMHKUAUYHVZOA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fsubs%2Fprimeclub%2Fsignup%2Fmain.html%2Fref%3Dpe_150770_28281580_pe_lf16%2F" style="font-family:verdana,arial,helvetica;color:#003399;line-height:1.4;font-size: 11px;text-decoration:none;">Prime</a></td>
+ </tr>
+ </table>
+ </td>
+ <td
+
+><img width="32" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" /></td>
+ <td
+
+>
+ <table cellpadding="0" cellspacing="0">
+ <tr>
+ <td valign="top"><img style=display:block src="http://g-ecx.images-amazon.com/images/G/01/email/a4.gif" width="10" height="13" /></td>
+ <td
+
+><a href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=1OO3CYVCUXDVU1RCZSMOPDXXRA4A&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fb%2Fref%3Dpe_150770_28281580_pe_lf17%2F%3Fnode%3D165793011" style="font-family:verdana,arial,helvetica;color:#004B91;line-height:1.4;font-size: 11px;text-decoration:none;">Toys &amp; Games</a></td>
+ </tr
+
+>
+ <tr>
+ <td valign="top"><img style=display:block src="http://g-ecx.images-amazon.com/images/G/01/email/a4.gif" width="10" height="13" /></td>
+ <td
+
+><a href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=Q43A3UY0Q6KMGOXDEMOFZEH4ANYA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fb%2Fref%3Dpe_150770_28281580_pe_lf18%2F%3Fnode%3D165796011" style="font-family:verdana,arial,helvetica;color:#004B91;line-height:1.4;font-size: 11px;text-decoration:none;">Baby</a></td>
+ </tr
+
+>
+ <tr>
+ <td valign="top"><img style=display:block src="http://g-ecx.images-amazon.com/images/G/01/email/a4.gif" width="10" height="13" /></td>
+ <td
+
+><a href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=FES8HMY3YJW7ZNUD2O6BBPMRLFAA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fb%2Fref%3Dpe_150770_28281580_pe_lf19%2F%3Fnode%3D1036592" style="font-family:verdana,arial,helvetica;color:#004B91;line-height:1.4;font-size: 11px;text-decoration:none;">Clothing</a></td>
+ </tr
+
+>
+ <tr>
+ <td valign="top"><img style=display:block src="http://g-ecx.images-amazon.com/images/G/01/email/a4.gif" width="10" height="13" /></td>
+ <td
+
+><a href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=CZGKV5GBR3UOFR4PHS5AMVGNEDAA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fb%2Fref%3Dpe_150770_28281580_pe_lf20%2F%3Fnode%3D1040668" style="font-family:verdana,arial,helvetica;color:#004B91;line-height:1.4;font-size: 11px;text-decoration:none;">Shoes</a></td>
+ </tr
+
+>
+ <tr>
+ <td valign="top"><img style=display:block src="http://g-ecx.images-amazon.com/images/G/01/email/a4.gif" width="10" height="13" /></td>
+ <td
+
+><a href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=MXYPAOHYPAC9XN6MVVWUZNYCSGEA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fb%2Fref%3Dpe_150770_28281580_pe_lf21%2F%3Fnode%3D3367581" style="font-family:verdana,arial,helvetica;color:#004B91;line-height:1.4;font-size: 11px;text-decoration:none;">Jewelry</a></td>
+ </tr
+
+>
+ <tr>
+ <td valign="top"><img style=display:block src="http://g-ecx.images-amazon.com/images/G/01/email/a4.gif" width="10" height="13" /></td>
+ <td
+
+><a href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=KAJQOYIU9SHHYADQQOGHOIO60FSA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fb%2Fref%3Dpe_150770_28281580_pe_lf21b%3F%26node%3D377110011" style="font-family:verdana,arial,helvetica;color:#004B91;line-height:1.4;font-size: 11px;text-decoration:none;">Watches</a></td>
+ </tr
+
+>
+ <tr>
+ <td valign="top"><img style=display:block src="http://g-ecx.images-amazon.com/images/G/01/email/a4.gif" width="10" height="13" /></td>
+ <td
+
+><a href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=AM8B3MIAJ9IY2JXUCKRIKFFEZW0A&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fb%2Fref%3Dpe_150770_28281580_pe_lf22%2F%3Fnode%3D3760911" style="font-family:verdana,arial,helvetica;color:#004B91;line-height:1.4;font-size: 11px;text-decoration:none;">Beauty</a></td>
+ </tr
+
+>
+ <tr>
+ <td valign="top"><img style=display:block src="http://g-ecx.images-amazon.com/images/G/01/email/a4.gif" width="10" height="13" /></td>
+ <td
+
+><a href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=CCE6OESYL4CQCFQCKMGSQGQ5JBQA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fb%2Fref%3Dpe_150770_28281580_pe_lf23%2F%3Fnode%3D599858" style="font-family:verdana,arial,helvetica;color:#004B91;line-height:1.4;font-size: 11px;text-decoration:none;">Magazines</a></td>
+ </tr>
+ </table>
+ </td>
+ <td
+
+><img width="32" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" /></td>
+ <td
+
+>
+ <table cellpadding="0" cellspacing="0">
+ <tr>
+ <td valign="top"><img style=display:block src="http://g-ecx.images-amazon.com/images/G/01/email/a4.gif" width="10" height="13" /></td>
+ <td
+
+><a href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=UK4FL8U0OR7ON2ZELLYLZAEMCNSA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fb%2Fref%3Dpe_150770_28281580_pe_lf25%2F%3Fnode%3D284507" style="font-family:verdana,arial,helvetica;color:#004B91;line-height:1.4;font-size: 11px;text-decoration:none;">Kitchen &amp; Dining</a></td>
+ </tr
+
+>
+ <tr>
+ <td valign="top"><img style=display:block src="http://g-ecx.images-amazon.com/images/G/01/email/a4.gif" width="10" height="13" /></td>
+ <td
+
+><a href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=LUSW88NAWSXBEWZI5AZJNC7MSO0A&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fb%2Fref%3Dpe_150770_28281580_pe_lf26%2F%3Fnode%3D1064954" style="font-family:verdana,arial,helvetica;color:#003399;line-height:1.4;font-size: 11px;text-decoration:none;">Office & School Supplies</a></td>
+ </tr
+
+>
+ <tr>
+ <td valign="top"><img style=display:block src="http://g-ecx.images-amazon.com/images/G/01/email/a4.gif" width="10" height="13" /></td>
+ <td
+
+><a href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=VIM5KDDUVJ9QOMF3AW53GJZSMEOA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fb%2Fref%3Dpe_150770_28281580_pe_lf27%2F%3Fnode%3D228013" style="font-family:verdana,arial,helvetica;color:#004B91;line-height:1.4;font-size: 11px;text-decoration:none;">Home Improvement</a></td>
+ </tr
+
+>
+ <tr>
+ <td valign="top"><img style=display:block src="http://g-ecx.images-amazon.com/images/G/01/email/a4.gif" width="10" height="13" /></td>
+ <td
+
+><a href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=QQ04IHARBB7BBD4ROLLFBACUYZMA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fb%2Fref%3Dpe_150770_28281580_pe_lf28%2F%3Fnode%3D16310101" style="font-family:verdana,arial,helvetica;color:#004B91;line-height:1.4;font-size: 11px;text-decoration:none;">Grocery</a></td>
+ </tr
+
+>
+ <tr>
+ <td valign="top"><img style=display:block src="http://g-ecx.images-amazon.com/images/G/01/email/a4.gif" width="10" height="13" /></td>
+ <td
+
+><a href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=MMNEAZZFM8O1MVWOGBKBENGAZAYA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fb%2Fref%3Dpe_150770_28281580_pe_lf29%2F%3Fnode%3D286168" style="font-family:verdana,arial,helvetica;color:#004B91;line-height:1.4;font-size: 11px;text-decoration:none;">Patio, Lawn &amp; Garden</a></td>
+ </tr
+
+>
+ <tr>
+ <td valign="top"><img style=display:block src="http://g-ecx.images-amazon.com/images/G/01/email/a4.gif" width="10" height="13" /></td>
+ <td
+
+><a href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=D94A9HXRESKULERCMA6ORFEKSDEA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fb%2Fref%3Dpe_150770_28281580_pe_lf30%2F%3Fnode%3D3760901" style="font-family:verdana,arial,helvetica;color:#004B91;line-height:1.4;font-size: 11px;text-decoration:none;">Health &amp; Personal Care</a></td>
+ </tr
+
+>
+ <tr>
+ <td valign="top"><img style=display:block src="http://g-ecx.images-amazon.com/images/G/01/email/a4.gif" width="10" height="13" /></td>
+ <td
+
+><a href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=QZSWFQ2U44PMV3TLJ4CAN4ZQC84A&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fb%2Fref%3Dpe_150770_28281580_pe_lf31%2F%3Fnode%3D3370831" style="font-family:verdana,arial,helvetica;color:#004B91;line-height:1.4;font-size: 11px;text-decoration:none;">Gourmet Food</a></td>
+ </tr
+
+>
+ <tr>
+ <td valign="top"><img style=display:block src="http://g-ecx.images-amazon.com/images/G/01/email/a4.gif" width="10" height="13" /></td>
+ <td
+
+><a href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=AHTCRPPBJFGCAUBNHKOCAKRH8AYA&T=C&U=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fgc%2Fref%3Dpe_150770_28281580_pe_gc" style="font-family:verdana,arial,helvetica;color:#003399;line-height:1.4;font-size: 11px;text-decoration:none;">Gift Cards</a></td>
+ </tr>
+ </table>
+ </td>
+ </tr>
+ </table>
+ </td>
+ </tr
+
+>
+ <tr>
+ <td height="8"><img width="1" height="8" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" /></td>
+ </tr
+
+>
+ <tr>
+ <td>
+ <font face="verdana,arial,sans-serif" size="1" color="#999999" style="font-family: verdana,arial,sans-serif; font-size: 10px; color: #999999;"
+
+>
+ We hope you found this message to be useful. However, if you'd rather not receive future e-mails of this sort from Amazon.com, please opt-out <a href="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=C8NR281VMBYHPCYVB7POJPE9GRQA&T=X&U=http%3A%2F%2Fwww.amazon.com%2F%2Fgp%2Fgss%2Fo%2F1dZor0ps7Qg1EHg2yBlxH6TvrLgQKB4L0yYwtHgN5hVqpZEcicWuzK-EaXUiKn7PI">here</a
+
+>.<br><br
+
+>
+ Please note that product prices and availability are subject to change. Prices and availability were accurate at the time this newsletter was sent; however, they may differ from those you see when you visit Amazon.com.<br><br>
+
+   &nbsp;
+
+<br/><br/
+
+>
+ &copy; 2013 Amazon.com, Inc. or its affiliates. All rights reserved. Amazon, Amazon.com, the Amazon.com logo and 1-Click are registered trademarks of Amazon.com, Inc. or its affiliates. Amazon.com, 410 Terry Avenue N., Seattle, WA 98109-5210. Reference: 28281580<br><br
+
+>
+ Please note that this message was sent to the following e-mail address: ryan.l.bell@gmail.com<br><br>
+ </font>
+ </td>
+ </tr>
+ </table>
+ </td>
+ <td width="8"><img width="8" height="1" style="display:block;" src="http://g-ecx.images-amazon.com/images/G/01/email/s.gif" /></td>
+ </tr>
+ </table>
+ </td>
+ </tr>
+</table
+
+>
+<img src="http://www.amazon.com/gp/r.html?R=2EZCY295CUAKO&C=3B1FZ0SFUMQWB&H=T3Y3CD0JQYKQ5AXOA0HVGEFKVY8A&T=E&U=http%3A%2F%2Fimages.amazon.com%2Fimages%2FG%2F01%2Fnav%2Ftransp.gif" /></body>
+</html>
+
+
+------=_Part_6656877_1035336879.1361117182425--
+
+------=_Part_6656876_1292998296.1361117182425--

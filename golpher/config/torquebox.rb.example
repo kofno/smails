@@ -1,0 +1,18 @@
+TorqueBox.configure do
+
+  service GolpherService do
+    name 'mail-receiver'
+    config do
+      username 'some.id@somewhere.com'
+      password 'a-secret'
+      server   'pop.somewhere.com'
+      port     995
+      ssl      true
+      interval 60
+    end
+
+  end
+
+  queue '/queues/mail_lists'
+  queue '/queues/failed_mail'
+end

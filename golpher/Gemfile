@@ -1,0 +1,8 @@
+source 'http://rubygems.org'
+
+gem 'mail'
+gem 'torquebox'
+
+group :development do
+  gem 'pry'
+end
