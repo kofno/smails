@@ -8,11 +8,8 @@ describe MailDistributor do
     MailDistributor.new sender: sender
   }
 
-  before :each do
-    sender.should_receive(:publish).with test_message
-  end
-
   it 'publishes the mail' do
+    sender.should_receive(:publish).with test_message
     distributor.distribute test_message
   end
 end
