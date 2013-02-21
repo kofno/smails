@@ -8,16 +8,26 @@ class EmailMessage < ActiveRecord::Base
   has_many :list_mails
   has_many :mailing_lists, through: :list_mails
 
-  def recipients
-    to + cc + bcc
-  end
-
   def raw_source= email_source
     write_attribute :raw_source, email_source
     populate_email_fields
   end
 
+  def associate_with_lists
+    recipient_mailing_list_matches.each do |list|
+      mailing_lists << list
+    end
+  end
+
   private
+
+  def recipient_mailing_list_matches
+    MailingList.filter_by_addresses recipients
+  end
+
+  def recipients
+    to + cc + bcc
+  end
 
   def parsed_email
     @parsed_email || Mail.new(raw_source)

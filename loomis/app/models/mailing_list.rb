@@ -7,15 +7,7 @@ class MailingList < ActiveRecord::Base
   has_many :list_mails
   has_many :email_messages, through: :list_mails
 
-  def self.associate_with_lists email
-    lists = recipient_lists email.recipients
-    lists.each do |list|
-      email.mailing_lists << list
-    end
+  def self.filter_by_addresses email_addresses
+    where conditions: email_addresses
   end
-
-  def self.recipient_lists recipients
-    where email_address: recipients
-  end
-
 end

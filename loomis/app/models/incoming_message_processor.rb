@@ -1,18 +1,16 @@
 class IncomingMessageProcessor
 
-  attr_reader :creator, :association_manager, :distributor
-  private     :creator, :association_manager, :distributor
+  attr_reader :creator, :distributor
+  private     :creator, :distributor
 
   def initialize args
-    @creator             = args.fetch :creator, EmailMessage
-    @association_manager = args.fetch :association_manager, MailingList
-    @distributor         = args.fetch :distributor, MailDistributor
+    @creator = args.fetch :email_creator, EmailMessage
   end
 
   def process message
     email = save message
-    associate_with_lists email
-    distribute email
+    email.associate_with_lists
+    email.distribute
   end
 
   private
@@ -21,11 +19,4 @@ class IncomingMessageProcessor
     creator.create! raw_source: message
   end
 
-  def associate_with_lists email
-    association_manager.associate_with_lists email
-  end
-
-  def distribute email
-    distributor.distribute email
-  end
 end
