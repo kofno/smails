@@ -1,4 +1,4 @@
-T H E  F L Y I N G  W A S P
-===========================
+THE  FLYING  WASP
+=================
 
 "Hey Smails! My dinghy's bigger then your whole boat!"
