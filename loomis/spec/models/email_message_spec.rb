@@ -25,7 +25,15 @@ describe EmailMessage do
     expect(email.subject).to eq(expected_subj)
   end
 
-  it 'distributes the email'
+  it 'distributes the email to each mailing list' do
+    messages = double(:outgoing_messages)
+    email.should_receive(:outgoing_messages).and_return messages
+    distributor = double(:distributor)
+    distributor.should_receive(:send).with(messages)
+    email.distributor = distributor
+
+    email.distribute
+  end
 
   it 'associates itself with mailing lists' do
     recipient_mailing_list_matches = expected_to + expected_cc

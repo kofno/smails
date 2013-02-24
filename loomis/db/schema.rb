@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130217204318) do
+ActiveRecord::Schema.define(:version => 20130224143124) do
 
   create_table "email_messages", :force => true do |t|
     t.text     "to"
@@ -34,6 +34,15 @@ ActiveRecord::Schema.define(:version => 20130217204318) do
 
   add_index "list_mails", ["mailing_list_id", "email_message_id"], :name => "index_list_mails_on_mailing_list_id_and_email_message_id", :unique => true
 
+  create_table "list_memberships", :force => true do |t|
+    t.integer  "member_id"
+    t.integer  "mailing_list_id"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+  end
+
+  add_index "list_memberships", ["member_id", "mailing_list_id"], :name => "index_list_memberships_on_member_id_and_mailing_list_id", :unique => true
+
   create_table "mailing_lists", :force => true do |t|
     t.string   "email_address", :null => false
     t.string   "name"
@@ -42,5 +51,11 @@ ActiveRecord::Schema.define(:version => 20130217204318) do
   end
 
   add_index "mailing_lists", ["email_address"], :name => "index_mailing_lists_on_email_address", :unique => true
+
+  create_table "members", :force => true do |t|
+    t.string   "email_address"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
 
 end

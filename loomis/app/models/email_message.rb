@@ -1,4 +1,5 @@
 class EmailMessage < ActiveRecord::Base
+  attr_writer :distributor
   attr_accessible :raw_source
 
   serialize :to
@@ -19,7 +20,25 @@ class EmailMessage < ActiveRecord::Base
     end
   end
 
+  def distribute
+    distributor.send outgoing_messages
+  end
+
   private
+
+  def outgoing_messages
+    mailing_lists.map do |mailing_list|
+      mailing_list.prepare(outgoing_message)
+    end
+  end
+
+  def outgoing_message
+    Mail.new raw_source
+  end
+
+  def distributor
+    @distributor ||= OutgoingMessageProcessor.new
+  end
 
   def recipient_mailing_list_matches
     MailingList.filter_by_addresses recipients

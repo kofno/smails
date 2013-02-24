@@ -7,7 +7,22 @@ class MailingList < ActiveRecord::Base
   has_many :list_mails
   has_many :email_messages, through: :list_mails
 
+  has_many :list_memberships
+  has_many :members
+
   def self.filter_by_addresses email_addresses
     where conditions: email_addresses
+  end
+
+  def prepare_outgoing_message message
+    message.to recipients
+    message.sender email_address
+    message
+  end
+
+  private
+
+  def recipients
+    memebers.map &:email_address
   end
 end

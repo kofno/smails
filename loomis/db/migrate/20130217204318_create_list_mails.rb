@@ -7,6 +7,6 @@ class CreateListMails < ActiveRecord::Migration
       t.timestamps
     end
 
-    add_index :list_mails, [:mailing_list_id, :email_message_id], unique: { case_sensitive: false }
+    add_index :list_mails, [:mailing_list_id, :email_message_id], unique: true
   end
 end

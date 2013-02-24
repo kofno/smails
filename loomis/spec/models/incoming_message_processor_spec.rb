@@ -2,8 +2,9 @@ require 'spec_helper'
 
 describe IncomingMessageProcessor do
 
-  let(:email_message)            { double(:email_message) }
-  let(:email_creator)            { double(:email_creator) }
+  let(:email_message) { double(:email_message) }
+  let(:email_creator) { double(:email_creator) }
+  let(:test_source)   { '<email source>' }
 
   let(:processor) {
     IncomingMessageProcessor.new email_creator: email_creator
