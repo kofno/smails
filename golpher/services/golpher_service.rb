@@ -21,7 +21,8 @@ class GolpherService
   private
 
   def processor
-    MessageProcessor.new list_messages_queue, failed_message_queue
+    MessageProcessor.new sucess_handler:  list_messages_queue,
+                         failure_handler: failed_message_queue
   end
 
   def list_messages_queue
