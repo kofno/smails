@@ -19,27 +19,35 @@ module Golpher
     end
 
     def stop
-      @done = true
+      @running = false
     end
 
-    def done?
-      !!@done || interval == 0
+    def running?
+      @running && interval > 0
     end
-
-    private
 
     def start
-      logger.info "Golpher Server Started"
-      @done = false
-      until done?
+      logger.info "Golpher server started"
+      start_loop
+      logger.info "Golpher server stopped"
+    end
+
+    def start_loop
+      @running = true
+      while running?
         logger.info "Golpher getting messages"
-        client.messages do |message|
-          processor.process message
-        end
+        process_messages
 
         sleep interval
       end
-      logger.info "Golpher Server Stopped"
+    end
+
+    def process_messages
+      client.messages do |message|
+        processor.process message
+      end
+    rescue => e
+      logger.error e
     end
   end
 end

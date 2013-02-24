@@ -17,17 +17,33 @@ module Golpher
       @connection.enable_ssl(OpenSSL::SSL::VERIFY_NONE) if options[:ssl]
     end
 
-    def messages
+    def messages &block
       return unless block_given?
 
-      connection.start username, password
-      unless connection.mails.empty?
-        connection.delete_all do |mail|
-          yield mail.pop
-        end
-      end
+      start
+      delete_all &block unless empty?
     ensure
+      finish
+    end
+
+    private
+
+    def start
+      connection.start username, password
+    end
+
+    def delete_all &block
+      connection.delete_all do |mail|
+        block.call mail.pop
+      end
+    end
+
+    def finish
       connection.finish rescue nil
+    end
+
+    def empty?
+      connection.mail.empty?
     end
   end
 

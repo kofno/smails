@@ -1,0 +1,6 @@
+--color
+--order rand
+-Ilib
+-Iservices
+-Ispec
+-rgolpher
