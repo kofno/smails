@@ -32,6 +32,7 @@ gem 'mail'
 group :development do
   gem 'guard'
   gem 'guard-jruby-rspec'
+  gem 'torquebox'
 end
 
 group :test, :development do

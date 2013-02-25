@@ -6,3 +6,7 @@ group :development, :test do
   gem 'rspec'
   gem 'rspec-mocks'
 end
+
+group :development do
+  gem 'torquebox'
+end
