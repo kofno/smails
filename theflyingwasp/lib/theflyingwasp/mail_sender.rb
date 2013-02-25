@@ -8,6 +8,7 @@ module TheFlyingWasp
     attr_reader :logger
 
     def initialize
+      super
       @logger = Logger.new STDOUT
     end
 
