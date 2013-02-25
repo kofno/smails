@@ -1,0 +1,5 @@
+--color
+--order rand
+-Ilib
+-Ispec
+-rtheflyingwasp
