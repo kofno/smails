@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'torquebox-messaging'
+gem 'torquebox-server'
 
 group :development, :test do
   gem 'rspec'
