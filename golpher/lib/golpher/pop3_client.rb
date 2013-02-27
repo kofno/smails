@@ -43,7 +43,7 @@ module Golpher
     end
 
     def empty?
-      connection.mail.empty?
+      connection.mails.empty?
     end
   end
 
