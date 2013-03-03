@@ -5,7 +5,8 @@ class MailReceiver < TorqueBox::Messaging::MessageProcessor
   attr_writer :message_processor
 
   def on_message body
-    message_processor.process body[:content]
+    message_processor.process message: body[:content],
+      uuid: body[:uuid]
   end
 
   private

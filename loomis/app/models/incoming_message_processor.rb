@@ -16,7 +16,8 @@ class IncomingMessageProcessor
   private
 
   def save message
-    creator.create! raw_source: message
+    creator.create! raw_source: message[:message],
+      uuid: message[:uuid]
   end
 
 end

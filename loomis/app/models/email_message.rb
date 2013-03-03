@@ -1,6 +1,6 @@
 class EmailMessage < ActiveRecord::Base
   attr_writer :distributor
-  attr_accessible :raw_source
+  attr_accessible :raw_source, :uuid
 
   serialize :to
   serialize :cc

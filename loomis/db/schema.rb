@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130224143124) do
+ActiveRecord::Schema.define(:version => 20130303230059) do
 
   create_table "email_messages", :force => true do |t|
     t.text     "to"
@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(:version => 20130224143124) do
     t.text     "raw_source"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.string   "uuid"
   end
 
   create_table "list_mails", :force => true do |t|
