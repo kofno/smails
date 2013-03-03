@@ -1,0 +1,13 @@
+<h1>Queue: <%= @queue.name %></h1>
+<table id='messages'>
+  <tr>
+    <th>ID</td>
+    <th>Subject</td>
+  </tr>
+  <% for message in @queue %>
+    <tr>
+      <td><%= message[:uuid] %></td>
+      <td><%= message[:message] %></td>
+    </tr>
+  <% end %>
+</table>

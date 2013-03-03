@@ -1,0 +1,11 @@
+<h1>Queues</h1>
+<table id="queues">
+  <tr>
+    <th>Queue</th>
+  </tr>
+  <% for queue in @queues %>
+    <tr>
+      <td><%= link_to queue.name, queue_path(queue.name) %></td>
+    </tr>
+  <% end %>
+</table>

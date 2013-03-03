@@ -1,0 +1,3 @@
+class QueueNotFoundError < StandardError
+
+end

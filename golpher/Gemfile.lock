@@ -147,8 +147,6 @@ GEM
       rake (>= 0.8.7)
     torquebox-security (2.3.0-java)
       torquebox-core (= 2.3.0)
-    torquebox-server (2.3.0-java)
-      torquebox (= 2.3.0)
     torquebox-stomp (2.3.0)
       torquebox-core (= 2.3.0)
       torquebox-messaging (= 2.3.0)
@@ -182,6 +180,5 @@ DEPENDENCIES
   therubyrhino
   torquebox
   torquebox-messaging
-  torquebox-server
   twitter-bootstrap-rails
   uglifier (>= 1.0.3)

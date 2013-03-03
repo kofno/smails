@@ -23,10 +23,14 @@ class MessageProcessor
   end
 
   def queue_incoming mail
-    success.publish message: mail.subject, content: mail.to_s
+    success.publish uuid: generate_id, message: mail.subject, content: mail.to_s
   end
 
   def queue_failure args
-    failure.publish message: args[:message], content: args[:content]
+    failure.publish uuid: generate_id, message: args[:message], content: args[:content]
+  end
+
+  def generate_id
+    SecureRandom.uuid
   end
 end
