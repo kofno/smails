@@ -1,3 +1,7 @@
+<% content_for :actions do %>
+  <li><%= link_to 'Clear queue', clear_queue_path(@queue.name), method: :delete %></li>
+<% end %>
+
 <h1>Queue: <%= @queue.name %></h1>
 <table id='messages'>
   <tr>

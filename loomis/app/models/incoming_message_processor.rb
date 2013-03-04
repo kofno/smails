@@ -3,7 +3,7 @@ class IncomingMessageProcessor
   attr_reader :creator, :distributor
   private     :creator, :distributor
 
-  def initialize args
+  def initialize args={}
     @creator = args.fetch :email_creator, EmailMessage
   end
 

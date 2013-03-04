@@ -15,4 +15,9 @@ describe MailQueue do
     message.should_receive(:decode).and_return subject: 'Re: Your request'
     queue.each
   end
+
+  it 'removes all the messages from the queue' do
+    jmx_queue.should_receive(:remove_messages).and_return 1
+    queue.clear
+  end
 end

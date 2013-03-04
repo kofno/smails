@@ -16,6 +16,10 @@ class MailQueue
     decoded_messages.each &block
   end
 
+  def clear
+    resource.remove_messages
+  end
+
   private
 
   def decoded_messages

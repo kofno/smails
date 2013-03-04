@@ -8,12 +8,24 @@ class QueuesController < ApplicationController
   end
 
   def show
-    @queue = queues.find_by_name params[:id]
+    @queue = queue params[:id]
+  end
+
+  def clear
+    @queue = queue params[:id]
+    @queue.clear
+    respond_to do |format|
+      format.html { redirect_to queue_url(@queue.name) }
+    end
   end
 
   private
 
   def queues
     Queues.new
+  end
+
+  def queue name
+    queues.find_by_name name
   end
 end

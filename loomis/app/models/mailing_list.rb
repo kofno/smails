@@ -11,7 +11,7 @@ class MailingList < ActiveRecord::Base
   has_many :members
 
   def self.filter_by_addresses email_addresses
-    where conditions: email_addresses
+    where email_address: email_addresses
   end
 
   def prepare_outgoing_message message

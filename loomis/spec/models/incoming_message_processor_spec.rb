@@ -4,8 +4,8 @@ describe IncomingMessageProcessor do
 
   let(:email_message) { double(:email_message) }
   let(:email_creator) { double(:email_creator) }
-  let(:test_source)   { {
-    raw_source: '<email source>', uuid: '<uuid>'}
+  let(:test_source)   {
+    { raw_source: '<email source>', uuid: '<uuid>'}
   }
 
   let(:processor) {
