@@ -4,7 +4,7 @@ class ListMail < ActiveRecord::Base
   validates :email_message_id, presence: true, uniqueness: { scope: :mailing_list_id }
   validates :mailing_list_id,  presence: true
 
-  has_one :mailing_list
-  has_one :email_message
+  belongs_to :mailing_list
+  belongs_to :email_message
 
 end
