@@ -13,6 +13,28 @@ module Dannunzio
 
       session.start
     end
+
+    it 'sends +OK messages' do
+      client.should_receive(:print).with "+OK it's all good \r\n"
+
+      session.send_ok "it's all good"
+    end
+
+    it 'sends -ERR messages' do
+      client.should_receive(:print).with "-ERR oh noes \r\n"
+
+      session.send_err "oh noes"
+    end
+
+    it 'closes the session' do
+      client.should_receive(:close)
+
+      session.close
+    end
+
+    it 'authorizes a user'
+
+    it 'locks a maildrop'
   end
 
 end

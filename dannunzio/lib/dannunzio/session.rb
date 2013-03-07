@@ -15,13 +15,26 @@ module Dannunzio
       receive_commands
     end
 
+    def send_ok msg=""
+      client.print "+OK #{msg} \r\n"
+    end
+
+    def send_err msg=""
+      client.print "-ERR #{msg} \r\n"
+    end
+
+    def close
+      client.close
+    end
+
     private
 
     def send_greeting
-      client.print "+OK D'Annunzio POP3 is ready!\r\n"
+      send_ok "D'Annunzio POP3 is ready!"
     end
 
     def authorization_mode
+      @mode = AuthorizationMode.new
     end
   end
 
