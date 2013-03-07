@@ -24,6 +24,7 @@ module Dannunzio
     end
 
     def close
+      send_ok "D'Annunzio signing off"
       client.close
     end
 

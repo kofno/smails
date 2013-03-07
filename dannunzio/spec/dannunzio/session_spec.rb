@@ -27,7 +27,8 @@ module Dannunzio
     end
 
     it 'closes the session' do
-      client.should_receive(:close)
+      client.should_receive(:print).with("+OK D'Annunzio signing off \r\n").ordered
+      client.should_receive(:close).ordered
 
       session.close
     end
