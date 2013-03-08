@@ -6,18 +6,6 @@ module Dannunzio
     let(:session) { double :session }
     let(:mode)    { AuthorizationMode.new session }
 
-    it "responds to pop command 'quit'" do
-      expect(mode.responds_to_command?(:quit)).to be_true
-    end
-
-    it "responds to pop command 'user'" do
-      expect(mode.responds_to_command?(:user)).to be_true
-    end
-
-    it "responds to pop command 'pass'" do
-      expect(mode.responds_to_command?(:pass)).to be_true
-    end
-
     describe "client sessions sending a QUIT command" do
 
       it "are ended immediately" do
@@ -41,7 +29,8 @@ module Dannunzio
       it "receive an ERR if authentication fails" do
         mode.should_receive(:username).and_return 'foo'
         session.should_receive(:authorize!).with('foo', 'secret').and_raise 'invalid credentials'
-        session.should_receive(:send_err).with 'invalid credentials'
+        mode.should_receive(:reset_auth)
+        mode.should_receive(:send_err).with 'invalid credentials'
 
         mode.pass 'secret'
       end
@@ -50,7 +39,8 @@ module Dannunzio
         mode.should_receive(:username).twice.and_return 'foo', 'foo'
         session.should_receive(:authorize!).with 'foo', 'secret'
         session.should_receive(:lock!).with('foo').and_raise 'unable to lock maildrop'
-        session.should_receive(:send_err).with 'unable to lock maildrop'
+        mode.should_receive(:reset_auth)
+        mode.should_receive(:send_err).with 'unable to lock maildrop'
 
         mode.pass 'secret'
       end
@@ -63,6 +53,17 @@ module Dannunzio
 
         mode.pass 'secret'
       end
+    end
+
+    describe "unsupported commands" do
+
+      it "resets authorization state" do
+        mode.should_receive :reset_auth
+        session.should_receive(:send_err).with 'unrecognized command'
+
+        mode.unsupported_command
+      end
+
     end
 
   end
