@@ -10,5 +10,6 @@ module Dannunzio
 
   autoload :Command,           'dannunzio/command'
   autoload :UserCommand,       'dannunzio/command'
+  autoload :PassCommand,       'dannunzio/command'
 
 end
