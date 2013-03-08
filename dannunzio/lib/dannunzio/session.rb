@@ -3,7 +3,7 @@ module Dannunzio
 
   class Session
 
-    attr_reader :client
+    attr_reader :client, :mode
 
     def initialize client
       @client = client
@@ -36,6 +36,12 @@ module Dannunzio
 
     def authorization_mode
       @mode = AuthorizationMode.new
+    end
+
+    def receive_commands
+      while command = client.gets
+        mode.process_command command
+      end
     end
   end
 

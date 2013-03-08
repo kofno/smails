@@ -1,15 +1,16 @@
+require 'forwardable'
+
 module Dannunzio
 
   class AuthorizationMode
+    extend Forwardable
+    include CommandProcessor
 
     attr_reader :session, :username
+    def_delegators :@session, :send_ok, :send_err
 
     def initialize session
       @session = session
-    end
-
-    def responds_to_command? command
-      [:quit, :user, :pass].any? { |supported| supported == command }
     end
 
     def quit
@@ -18,15 +19,25 @@ module Dannunzio
 
     def user mailbox
       @username = mailbox
-      session.send_ok
+      send_ok
     end
 
     def pass password
       session.authorize! username, password
       session.lock! username
-      session.send_ok 'maildrop is locked and ready'
+      send_ok 'maildrop is locked and ready'
     rescue => e
-      session.send_err e.message
+      reset_auth
+      send_err e.message
+    end
+
+    def unsupported_command
+      reset_auth
+      super
+    end
+
+    def reset_auth
+      @username = nil
     end
 
   end
