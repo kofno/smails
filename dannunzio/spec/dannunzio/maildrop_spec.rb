@@ -7,12 +7,12 @@ module Dannunzio
     let(:maildrop) { Maildrop.new username: 'kofno', password: 'secret' }
 
     it "will verify the password for maildrop" do
-      expect(maildrop).to be_authenticated('secret')
+      maildrop.authenticate! 'secret'
     end
 
     it "will lock the maildrop" do
       maildrop.save
-      expect(maildrop.lock!).to be_true
+      expect(maildrop.lock!).to be_a(Lock)
     end
 
     it "raises an exception if the maildrop can't be locked" do

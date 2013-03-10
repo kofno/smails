@@ -37,9 +37,7 @@ module Dannunzio
 
     def authenticate! username, password
       @maildrop = store.fetch_maildrop username
-      unless maildrop.authenticated? password
-        raise 'invalid credentials'
-      end
+      maildrop.authenticate! password
     end
 
     def lock!
