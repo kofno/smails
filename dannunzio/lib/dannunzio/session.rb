@@ -3,7 +3,7 @@ module Dannunzio
 
   class Session
 
-    attr_reader :client, :mode
+    attr_reader :client, :mode, :maildrop, :lock
 
     def initialize client
       @client = client
@@ -28,14 +28,23 @@ module Dannunzio
       client.close
     end
 
+    def acquire_lock! username, password
+      authenticate! username, password
+      lock!
+    end
+
+    private
+
     def authenticate! username, password
-      maildrop = store.fetch_maildrop username
+      @maildrop = store.fetch_maildrop username
       unless maildrop.authenticated? password
         raise 'invalid credentials'
       end
     end
 
-    private
+    def lock!
+      @lock ||= maildrop.lock!
+    end
 
     def send_greeting
       send_ok "D'Annunzio POP3 is ready!"

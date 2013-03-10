@@ -1,4 +1,4 @@
-require 'dannunzio'
+require 'spec_helper'
 
 module Dannunzio
 
@@ -35,23 +35,12 @@ module Dannunzio
       session.close
     end
 
-    it 'authorizes a user' do
-      session.should_receive(:store).and_return store
-      store.should_receive(:fetch_maildrop).with('kofno').and_return maildrop
-      maildrop.should_receive(:authenticated?).with('secret').and_return true
+    it 'acquires a lock' do
+      session.should_receive(:authenticate!).with 'kofno', 'secret'
+      session.should_receive(:lock!)
 
-      session.authenticate! 'kofno', 'secret'
+      session.acquire_lock! 'kofno', 'secret'
     end
-
-    it 'raises an exception if authorization fails' do
-      session.should_receive(:store).and_return store
-      store.should_receive(:fetch_maildrop).with('kofno').and_return maildrop
-      maildrop.should_receive(:authenticated?).with('secret').and_return false
-
-      expect { session.authenticate! 'kofno', 'secret' }.to raise_error('invalid credentials')
-    end
-
-    it 'locks a maildrop'
   end
 
 end

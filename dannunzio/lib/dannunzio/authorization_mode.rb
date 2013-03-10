@@ -23,8 +23,7 @@ module Dannunzio
     end
 
     def pass password
-      session.authorize! username, password
-      session.lock! username
+      session.acquire_lock! username, password
       send_ok 'maildrop is locked and ready'
     rescue => e
       reset_auth

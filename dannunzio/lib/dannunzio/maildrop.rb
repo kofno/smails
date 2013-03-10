@@ -6,9 +6,7 @@ module Dannunzio
   class Maildrop < Sequel::Model
     include BCrypt
 
-    def authenticated? password
-      self.password == password
-    end
+    one_to_one :lock
 
     def password=(password)
       self[:password] = Password.create password
@@ -17,6 +15,16 @@ module Dannunzio
     def password
       Password.new self[:password]
     end
+
+    def authenticated? password
+      self.password == password
+    end
+
+    def lock!
+      raise 'unable to lock maildrop' unless self.lock.nil?
+      self.lock = Lock.new
+    end
+
   end
 
 end

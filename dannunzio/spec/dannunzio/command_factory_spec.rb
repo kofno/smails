@@ -1,4 +1,4 @@
-require 'dannunzio'
+require 'spec_helper'
 
 module Dannunzio
 

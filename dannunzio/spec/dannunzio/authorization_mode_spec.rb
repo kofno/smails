@@ -1,4 +1,4 @@
-require 'dannunzio'
+require 'spec_helper'
 
 module Dannunzio
 
@@ -24,11 +24,11 @@ module Dannunzio
 
     end
 
-    describe "client seesions sending a PASS commnd" do
+    describe "client sessions sending a PASS commnd" do
       
       it "receive an ERR if authentication fails" do
         mode.should_receive(:username).and_return 'foo'
-        session.should_receive(:authorize!).with('foo', 'secret').and_raise 'invalid credentials'
+        session.should_receive(:acquire_lock!).with('foo', 'secret').and_raise 'invalid credentials'
         mode.should_receive(:reset_auth)
         mode.should_receive(:send_err).with 'invalid credentials'
 
@@ -36,9 +36,8 @@ module Dannunzio
       end
 
       it "receive an ERR if a mailbox lock can't be acquired" do
-        mode.should_receive(:username).twice.and_return 'foo', 'foo'
-        session.should_receive(:authorize!).with 'foo', 'secret'
-        session.should_receive(:lock!).with('foo').and_raise 'unable to lock maildrop'
+        mode.should_receive(:username).and_return 'foo'
+        session.should_receive(:acquire_lock!).with('foo', 'secret').and_raise 'unable to lock maildrop'
         mode.should_receive(:reset_auth)
         mode.should_receive(:send_err).with 'unable to lock maildrop'
 
@@ -46,9 +45,8 @@ module Dannunzio
       end
 
       it "enters TRANSACTION MODE if auth succeeds and lock acquired" do
-        mode.should_receive(:username).twice.and_return 'foo', 'foo'
-        session.should_receive(:authorize!).with 'foo', 'secret'
-        session.should_receive(:lock!).with 'foo'
+        mode.should_receive(:username).and_return 'foo'
+        session.should_receive(:acquire_lock!).with 'foo', 'secret'
         session.should_receive(:send_ok).with 'maildrop is locked and ready'
 
         mode.pass 'secret'
