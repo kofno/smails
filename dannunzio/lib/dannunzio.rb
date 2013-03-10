@@ -12,4 +12,7 @@ module Dannunzio
   autoload :UserCommand,       'dannunzio/command'
   autoload :PassCommand,       'dannunzio/command'
 
+  autoload :Store,             'dannunzio/store'
+  autoload :Maildrop,          'dannunzio/maildrop'
+  autoload :Schema,            'dannunzio/schema'
 end

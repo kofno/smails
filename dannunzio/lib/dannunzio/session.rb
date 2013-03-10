@@ -28,6 +28,13 @@ module Dannunzio
       client.close
     end
 
+    def authenticate! username, password
+      maildrop = store.fetch_maildrop username
+      unless maildrop.authenticated? password
+        raise 'invalid credentials'
+      end
+    end
+
     private
 
     def send_greeting

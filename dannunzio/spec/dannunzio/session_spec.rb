@@ -3,8 +3,10 @@ require 'dannunzio'
 module Dannunzio
 
   describe Session do
-    let(:client)  { double :client }
-    let(:session) { Session.new client }
+    let(:store)              { double :store }
+    let(:maildrop)           { double :maildrop }
+    let(:client)             { double :client }
+    let(:session)            { Session.new client }
 
     it 'starts the session' do
       session.should_receive(:send_greeting)
@@ -33,7 +35,21 @@ module Dannunzio
       session.close
     end
 
-    it 'authorizes a user'
+    it 'authorizes a user' do
+      session.should_receive(:store).and_return store
+      store.should_receive(:fetch_maildrop).with('kofno').and_return maildrop
+      maildrop.should_receive(:authenticated?).with('secret').and_return true
+
+      session.authenticate! 'kofno', 'secret'
+    end
+
+    it 'raises an exception if authorization fails' do
+      session.should_receive(:store).and_return store
+      store.should_receive(:fetch_maildrop).with('kofno').and_return maildrop
+      maildrop.should_receive(:authenticated?).with('secret').and_return false
+
+      expect { session.authenticate! 'kofno', 'secret' }.to raise_error('invalid credentials')
+    end
 
     it 'locks a maildrop'
   end
