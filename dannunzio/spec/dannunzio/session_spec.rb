@@ -17,19 +17,19 @@ module Dannunzio
     end
 
     it 'sends +OK messages' do
-      client.should_receive(:print).with "+OK it's all good \r\n"
+      client.should_receive(:print).with "+OK it's all good\r\n"
 
       session.send_ok "it's all good"
     end
 
     it 'sends -ERR messages' do
-      client.should_receive(:print).with "-ERR oh noes \r\n"
+      client.should_receive(:print).with "-ERR oh noes\r\n"
 
       session.send_err "oh noes"
     end
 
     it 'closes the session' do
-      client.should_receive(:print).with("+OK D'Annunzio signing off \r\n").ordered
+      client.should_receive(:print).with("+OK D'Annunzio signing off\r\n").ordered
       client.should_receive(:close).ordered
 
       session.close

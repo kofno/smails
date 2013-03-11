@@ -16,11 +16,11 @@ module Dannunzio
     end
 
     def send_ok msg=""
-      client.print "+OK #{msg} \r\n"
+      client.print "+OK #{msg}\r\n"
     end
 
     def send_err msg=""
-      client.print "-ERR #{msg} \r\n"
+      client.print "-ERR #{msg}\r\n"
     end
 
     def close
