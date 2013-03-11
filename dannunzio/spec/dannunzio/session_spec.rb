@@ -35,9 +35,10 @@ module Dannunzio
       session.close
     end
 
-    it 'acquires a lock' do
+    it 'acquires a lock and enters transaction mode' do
       session.should_receive(:authenticate!).with 'kofno', 'secret'
       session.should_receive(:lock!)
+      session.should_receive(:transaction_mode)
 
       session.acquire_lock! 'kofno', 'secret'
     end

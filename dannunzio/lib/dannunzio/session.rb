@@ -31,6 +31,7 @@ module Dannunzio
     def acquire_lock! username, password
       authenticate! username, password
       lock!
+      transaction_mode
     end
 
     private
@@ -49,7 +50,11 @@ module Dannunzio
     end
 
     def authorization_mode
-      @mode = AuthorizationMode.new
+      @mode = AuthorizationMode.new self
+    end
+
+    def transaction_mode
+      @mode = TransactionMode.new self
     end
 
     def receive_commands

@@ -8,7 +8,7 @@ module Dannunzio
 
   DB = Sequel.connect 'jdbc:hsqldb:file:~/.dannunzio/db/pop',
     user: 'SA', password: ''
-  DB.logger = Logger.new(STDOUT)
+  DB.logger = Logger.new('log/test.log', 'daily')
 
   Sequel::Model.db = DB
 
