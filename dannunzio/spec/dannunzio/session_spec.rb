@@ -34,8 +34,7 @@ module Dannunzio
     end
 
     it "acquires a mail drop lock" do
-      session.should_receive(:store).and_return store
-      store.should_receive(:fetch_maildrop!).with("kofno").and_return drop
+      Maildrop.should_receive(:find_by_username!).with("kofno").and_return drop
       drop.should_receive(:authenticate!).with('secret').and_return true
       drop.should_receive(:acquire_lock!).and_return lock
 

@@ -37,7 +37,7 @@ module Dannunzio
     private
 
     def authenticate! username, password
-      @maildrop = store.fetch_maildrop! username
+      @maildrop = Maildrop.find_by_username! username
       maildrop.authenticate! password
     end
 
@@ -61,10 +61,6 @@ module Dannunzio
       while command = client.gets
         mode.process_command command
       end
-    end
-
-    def store
-      @store ||= Store.new
     end
   end
 

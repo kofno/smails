@@ -14,7 +14,6 @@ module Dannunzio
   autoload :PassCommand,       'dannunzio/command'
 
   autoload :DB,                'dannunzio/db'
-  autoload :Store,             'dannunzio/store'
   autoload :Schema,            'dannunzio/schema'
   autoload :Maildrop,          'dannunzio/maildrop'
   autoload :Lock,              'dannunzio/lock'

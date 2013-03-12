@@ -17,8 +17,12 @@ module Dannunzio
 
     it "raises an exception if the maildrop can't be locked" do
       maildrop.save
-      maildrop.lock!
+      maildrop.acquire_lock!
       expect { maildrop.acquire_lock! }.to raise_error 'unable to lock maildrop'
+    end
+
+    it "raises an exception if a maildrop with that name can't be found" do
+      expect { Maildrop.find_by_username!('who') }.to raise_error 'invalid credentials'
     end
 
   end

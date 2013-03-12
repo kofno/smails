@@ -9,6 +9,12 @@ module Dannunzio
 
     one_to_many :locks
 
+    def self.find_by_username! username
+      drop = find username: username
+      raise 'invalid credentials' unless drop
+      drop
+    end
+
     def authenticate! password
       unless self.password == password
         raise 'invalid credentials'
