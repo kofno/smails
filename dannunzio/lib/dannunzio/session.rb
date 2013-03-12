@@ -30,19 +30,19 @@ module Dannunzio
 
     def acquire_lock! username, password
       authenticate! username, password
-      lock!
+      lock_maildrop!
       transaction_mode
     end
 
     private
 
     def authenticate! username, password
-      @maildrop = store.fetch_maildrop username
+      @maildrop = store.fetch_maildrop! username
       maildrop.authenticate! password
     end
 
-    def lock!
-      @lock ||= maildrop.lock!
+    def lock_maildrop!
+      @lock ||= maildrop.acquire_lock!
     end
 
     def send_greeting
@@ -61,6 +61,10 @@ module Dannunzio
       while command = client.gets
         mode.process_command command
       end
+    end
+
+    def store
+      @store ||= Store.new
     end
   end
 

@@ -12,13 +12,13 @@ module Dannunzio
 
     it "will lock the maildrop" do
       maildrop.save
-      expect(maildrop.lock!).to be_a(Lock)
+      expect(maildrop.acquire_lock!).to be_a(Lock)
     end
 
     it "raises an exception if the maildrop can't be locked" do
       maildrop.save
       maildrop.lock!
-      expect { maildrop.lock! }.to raise_error 'unable to lock maildrop'
+      expect { maildrop.acquire_lock! }.to raise_error 'unable to lock maildrop'
     end
 
   end

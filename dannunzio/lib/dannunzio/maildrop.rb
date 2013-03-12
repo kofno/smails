@@ -15,7 +15,7 @@ module Dannunzio
       end
     end
 
-    def lock!
+    def acquire_lock!
       self.add_lock({})
     rescue UniqueConstraintViolation
       raise 'unable to lock maildrop'
