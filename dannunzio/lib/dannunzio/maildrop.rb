@@ -8,6 +8,7 @@ module Dannunzio
     include Sequel
 
     one_to_many :locks
+    one_to_many :messages
 
     def self.find_by_username! username
       drop = find username: username
@@ -22,7 +23,9 @@ module Dannunzio
     end
 
     def acquire_lock!
-      self.add_lock({})
+      lock = add_lock({})
+      lock.lock_messages
+      lock
     rescue UniqueConstraintViolation
       raise 'unable to lock maildrop'
     end
