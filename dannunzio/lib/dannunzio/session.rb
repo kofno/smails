@@ -16,11 +16,11 @@ module Dannunzio
     end
 
     def send_ok msg=""
-      client.print "+OK #{msg} \r\n"
+      client.print "+OK #{msg}\r\n"
     end
 
     def send_err msg=""
-      client.print "-ERR #{msg} \r\n"
+      client.print "-ERR #{msg}\r\n"
     end
 
     def close
@@ -30,18 +30,19 @@ module Dannunzio
 
     def acquire_lock! username, password
       authenticate! username, password
-      lock!
+      lock_maildrop!
+      transaction_mode
     end
 
     private
 
     def authenticate! username, password
-      @maildrop = store.fetch_maildrop username
+      @maildrop = Maildrop.find_by_username! username
       maildrop.authenticate! password
     end
 
-    def lock!
-      @lock ||= maildrop.lock!
+    def lock_maildrop!
+      @lock ||= maildrop.acquire_lock!
     end
 
     def send_greeting
@@ -49,7 +50,11 @@ module Dannunzio
     end
 
     def authorization_mode
-      @mode = AuthorizationMode.new
+      @mode = AuthorizationMode.new self
+    end
+
+    def transaction_mode
+      @mode = TransactionMode.new self
     end
 
     def receive_commands

@@ -5,8 +5,16 @@ module Dannunzio
 
   class Maildrop < Sequel::Model
     include BCrypt
+    include Sequel
 
-    one_to_one :lock
+    one_to_many :locks
+    one_to_many :messages
+
+    def self.find_by_username! username
+      drop = find username: username
+      raise 'invalid credentials' unless drop
+      drop
+    end
 
     def authenticate! password
       unless self.password == password
@@ -14,9 +22,12 @@ module Dannunzio
       end
     end
 
-    def lock!
-      raise 'unable to lock maildrop' unless self.lock.nil?
-      self.lock = Lock.new
+    def acquire_lock!
+      lock = add_lock({})
+      lock.lock_messages
+      lock
+    rescue UniqueConstraintViolation
+      raise 'unable to lock maildrop'
     end
 
     def password=(password)
