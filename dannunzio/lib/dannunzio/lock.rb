@@ -41,29 +41,29 @@ module Dannunzio
       deleted_lit = Sequel.lit 'false'
       index_lit   = Sequel.function :rownum
       dataset     = maildrop.messages_dataset
-      dataset.select(id_lit, :id, deleted_lit, index_lit)
+      dataset.select id_lit, :id, deleted_lit, index_lit
     end
 
     def drop_listing_dataset
-      messages_dataset.
-        select(count_lit, sum_lit(:octets, :octets)).
-        where(marked_deleted: false)
+      undeleted_messages_dataset.select count_lit, sum_lit(:octets, :octets)
     end
 
     def scan_listing_dataset
-      messages_dataset.
-        select(:index, :octets).
-        where(marked_deleted: false)
+      undeleted_messages_dataset.select :index, :octets
+    end
+
+    def undeleted_messages_dataset
+      messages_dataset.where marked_deleted: false
     end
 
     def count_lit
-      count = Sequel.function(:count, '*')
-      Sequel.as(count, :count)
+      count = Sequel.function :count, '*'
+      Sequel.as count, :count
     end
 
     def sum_lit field, field_alias='sum'
-      sum = Sequel.function(:sum, field)
-      Sequel.as(sum, field_alias)
+      sum = Sequel.function :sum, field
+      Sequel.as sum, field_alias
     end
 
     class MessageStats< Struct.new(:count_or_index, :octets)
