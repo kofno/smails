@@ -7,20 +7,36 @@ module Dannunzio
     include CommandProcessor
 
     attr_reader :session
-    def_delegators :@session, :send_ok, :send_err, :lock
+    def_delegators :@session, :lock, :send_ok, :send_err, :send_multi
 
     def initialize session
       @session = session
     end
 
     def stat
-      send_ok message_stats
+      send_ok drop_listing
+    end
+
+    def list arg=nil
+      arg ?
+        send_ok(scan_listing(arg)) :
+        send_multi(scan_listings)
+    rescue
+      send_err 'no such message'
     end
 
     private
 
-    def message_stats
-      lock.message_stats
+    def drop_listing
+      lock.drop_listing
+    end
+
+    def scan_listings
+      lock.scan_listings
+    end
+
+    def scan_listing arg
+      lock.scan_listing arg
     end
 
   end
