@@ -17,12 +17,20 @@ module Dannunzio
       send_ok drop_listing
     end
 
-    def list arg=nil
-      arg ?
-        send_ok(scan_listing(arg)) :
-        send_multi(scan_listings)
+    def list arg
+      send_ok scan_listing(arg)
     rescue
-      send_err 'no such message'
+      send_no_such_message
+    end
+
+    def list_all
+      send_multi scan_listings
+    end
+
+    def retr arg
+      send_multi lock.message_content(arg)
+    rescue
+      send_no_such_message
     end
 
     private
@@ -37,6 +45,10 @@ module Dannunzio
 
     def scan_listing arg
       lock.scan_listing arg
+    end
+
+    def send_no_such_message
+      send_err 'no such message'
     end
 
   end

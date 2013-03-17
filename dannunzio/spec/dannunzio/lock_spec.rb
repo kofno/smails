@@ -5,9 +5,9 @@ module Dannunzio
   describe Lock do
     let(:drop) { Maildrop.create username: 'kofno', password: 'secret' }
     let(:lock) { drop.acquire_lock! }
-    let(:msg1) { { content: '<Example 1>', octets: 212 } }
-    let(:msg2) { { content: '<Example 2>', octets: 108 } }
-    let(:msg3) { { content: '<Example 3>', octets: 101 } }
+    let(:msg1) { { content: "<Example 1>\r\n<Line 2>", octets: 212 } }
+    let(:msg2) { { content: "<Example 2>\r\n<Line 2>", octets: 108 } }
+    let(:msg3) { { content: "<Example 3>\r\n<Line 2>", octets: 101 } }
 
     before :each do
       drop.add_message msg1
@@ -31,8 +31,15 @@ module Dannunzio
       expect(lock.scan_listing(2).to_s).to eq('2 108')
     end
 
-    it 'raises an error when listing a deleted message' do
+    it 'raises an error when single listing a deleted message' do
       expect { lock.scan_listing 3 }.to raise_error 'no such message'
+    end
+
+    it 'returns the content of a message' do
+      content = lock.message_content 1
+      expect(content.size).to eq(2)
+      expect(content[0]).to eq('<Example 1>')
+      expect(content[1]).to eq('<Line 2>')
     end
   end
 

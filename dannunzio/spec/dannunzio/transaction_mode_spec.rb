@@ -23,7 +23,7 @@ module Dannunzio
       lock.should_receive(:scan_listings).and_return scan_listings
       session.should_receive(:send_multi).with(scan_listings)
 
-      mode.list
+      mode.list_all
     end
 
     it 'responds to a LIST 1 request' do
@@ -40,6 +40,22 @@ module Dannunzio
       session.should_receive(:send_err).with 'no such message'
 
       mode.list 3
+    end
+
+    it 'responds to a RETR 1 request' do
+      session.should_receive(:lock).and_return lock
+      lock.should_receive(:message_content).with(1).and_return ['line 1', 'line 2']
+      session.should_receive(:send_multi).with ['line 1', 'line 2']
+
+      mode.retr 1
+    end
+
+    it 'sends an -ERR when RETRing a deleted message' do
+      session.should_receive(:lock).and_return lock
+      lock.should_receive(:message_content).with(2).and_raise 'no such message'
+      session.should_receive(:send_err).with 'no such message'
+
+      mode.retr 2
     end
   end
 

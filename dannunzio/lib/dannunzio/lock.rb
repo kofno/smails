@@ -17,14 +17,13 @@ module Dannunzio
     end
 
     def scan_listings
-      scan_listing_dataset.map do |data|
+      scan_listings_dataset.map do |data|
         MessageStats.new(data[:index], data[:octets])
       end
     end
 
     def scan_listing arg
-      data = scan_listing_dataset.where(index: arg).first
-      raise 'no such message' unless data
+      data = undeleted_scan_listing arg
       MessageStats.new(data[:index], data[:octets])
     end
 
@@ -34,7 +33,19 @@ module Dannunzio
       message.mark_deleted
     end
 
+    def message_content scan_id
+      undeleted_message(scan_id).content.split("\r\n")
+    end
+
     private
+
+    def undeleted_message scan_id
+      undeleted_message_dataset(scan_id).first or raise 'no such message'
+    end
+
+    def undeleted_scan_listing scan_id
+      scan_listing_dataset(scan_id).first or raise 'no such message' 
+    end
 
     def lockable_messages
       id_lit      = Sequel.lit id.to_s
@@ -48,12 +59,20 @@ module Dannunzio
       undeleted_messages_dataset.select count_lit, sum_lit(:octets, :octets)
     end
 
-    def scan_listing_dataset
+    def scan_listings_dataset
       undeleted_messages_dataset.select :index, :octets
+    end
+
+    def scan_listing_dataset scan_id
+      scan_listings_dataset.where(index: scan_id)
     end
 
     def undeleted_messages_dataset
       messages_dataset.where marked_deleted: false
+    end
+
+    def undeleted_message_dataset scan_id
+      undeleted_messages_dataset.where(index: scan_id)
     end
 
     def count_lit
