@@ -33,6 +33,22 @@ module Dannunzio
       send_no_such_message
     end
 
+    def dele arg
+      lock.mark_deleted arg
+      send_ok
+    rescue
+      send_no_such_message
+    end
+
+    def noop
+      send_ok
+    end
+
+    def rset
+      lock.undelete_all
+      send_ok
+    end
+
     private
 
     def drop_listing

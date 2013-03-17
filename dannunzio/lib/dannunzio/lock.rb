@@ -37,6 +37,10 @@ module Dannunzio
       undeleted_message(scan_id).content.split("\r\n")
     end
 
+    def undelete_all
+      locked_messages_dataset.update(marked_deleted: false)
+    end
+
     private
 
     def undeleted_message scan_id

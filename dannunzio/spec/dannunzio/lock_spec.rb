@@ -41,6 +41,15 @@ module Dannunzio
       expect(content[0]).to eq('<Example 1>')
       expect(content[1]).to eq('<Line 2>')
     end
+
+    it 'raises an error when trying to return a deleted message' do
+      expect { lock.message_content 3 }.to raise_error 'no such message'
+    end
+
+    it 'undeletes all messages' do
+      lock.undelete_all
+      expect(lock.message_content(3)).to eq(msg3[:content].split("\r\n"))
+    end
   end
 
 end

@@ -57,6 +57,36 @@ module Dannunzio
 
       mode.retr 2
     end
+
+    it 'responds to a DELE 1 request' do
+      session.should_receive(:lock).and_return lock
+      lock.should_receive(:mark_deleted).with(1)
+      session.should_receive(:send_ok)
+
+      mode.dele 1
+    end
+
+    it 'sends an -ERR when DELEing a deleted message' do
+      session.should_receive(:lock).and_return lock
+      lock.should_receive(:mark_deleted).with(2).and_raise 'no such message'
+      session.should_receive(:send_err).with 'no such message'
+
+      mode.dele 2
+    end
+
+    it 'sends -OK for a NOOP' do
+      session.should_receive(:send_ok)
+
+      mode.noop
+    end
+
+    it 'responds to RSET' do
+      session.should_receive(:lock).and_return lock
+      lock.should_receive(:undelete_all)
+      session.should_receive(:send_ok)
+
+      mode.rset
+    end
   end
 
 end
