@@ -12,8 +12,7 @@ module Dannunzio
     end
 
     def drop_listing
-      data = drop_listing_dataset.first
-      MessageStats.new(data[:count], data[:octets])
+      DropListing.new self
     end
 
     def scan_listings
@@ -59,10 +58,6 @@ module Dannunzio
       dataset.select id_lit, :id, deleted_lit, index_lit
     end
 
-    def drop_listing_dataset
-      undeleted_messages_dataset.select count_lit, sum_lit(:octets, :octets)
-    end
-
     def scan_listings_dataset
       undeleted_messages_dataset.select :index, :octets
     end
@@ -77,16 +72,6 @@ module Dannunzio
 
     def undeleted_message_dataset scan_id
       undeleted_messages_dataset.where(index: scan_id)
-    end
-
-    def count_lit
-      count = Sequel.function :count, '*'
-      Sequel.as count, :count
-    end
-
-    def sum_lit field, field_alias='sum'
-      sum = Sequel.function :sum, field
-      Sequel.as sum, field_alias
     end
 
     class MessageStats< Struct.new(:count_or_index, :octets)

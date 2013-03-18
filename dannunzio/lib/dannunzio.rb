@@ -20,4 +20,6 @@ module Dannunzio
   autoload :LockedMessage,     'dannunzio/locked_message'
   autoload :Message,           'dannunzio/message'
 
+  autoload :DropListing,       'dannunzio/drop_listing'
+
 end
