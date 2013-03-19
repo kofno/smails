@@ -87,6 +87,12 @@ module Dannunzio
 
       mode.rset
     end
+
+    it 'responds to QUIT' do
+      session.should_receive(:update!)
+
+      mode.quit
+    end
   end
 
 end

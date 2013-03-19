@@ -49,6 +49,10 @@ module Dannunzio
       send_ok
     end
 
+    def quit
+      session.update!
+    end
+
     private
 
     def drop_listing
