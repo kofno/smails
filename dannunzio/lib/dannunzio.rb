@@ -21,5 +21,6 @@ module Dannunzio
   autoload :Message,           'dannunzio/message'
 
   autoload :DropListing,       'dannunzio/drop_listing'
+  autoload :ScanListings,      'dannunzio/scan_listings'
 
 end

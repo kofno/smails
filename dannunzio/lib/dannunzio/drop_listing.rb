@@ -29,15 +29,7 @@ module Dannunzio
     end
 
     def dataset
-      undeleted_messages_dataset.select count_lit, sum_lit(:octets, :octets)
-    end
-
-    def undeleted_messages_dataset
-      messages_dataset.where marked_deleted: false
-    end
-
-    def messages_dataset
-      lock.messages_dataset
+      lock.undeleted_messages_dataset.select count_lit, sum_lit(:octets, :octets)
     end
 
     def count_lit

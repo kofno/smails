@@ -21,7 +21,7 @@ module Dannunzio
     end
 
     it 'returns a full scan listing' do
-      listings = lock.scan_listings
+      listings = lock.scan_listings.map { |s| s }
       expect(listings.size).to eq(2)
       expect(listings[0].to_s).to eq('1 212')
       expect(listings[1].to_s).to eq('2 108')
@@ -44,6 +44,10 @@ module Dannunzio
 
     it 'raises an error when trying to return a deleted message' do
       expect { lock.message_content 3 }.to raise_error 'no such message'
+    end
+
+    it 'raises an error trying to delete a deleted message' do
+      expect { lock.mark_deleted 3 }.to raise_error 'no such message'
     end
 
     it 'undeletes all messages' do
