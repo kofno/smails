@@ -23,8 +23,11 @@ module Dannunzio
       client.print "-ERR #{msg}\r\n"
     end
 
-    def close
+    def send_sign_off
       send_ok "D'Annunzio signing off"
+    end
+
+    def close
       client.close
     end
 
@@ -32,6 +35,15 @@ module Dannunzio
       authenticate! username, password
       lock_maildrop!
       transaction_mode
+    end
+
+    def update
+      lock.clean_and_release
+      send_sign_off
+    rescue
+      send_err
+    ensure
+      close
     end
 
     private

@@ -37,4 +37,47 @@ module Dannunzio
       mode.pass glob_arguments
     end
   end
+
+  class StatCommand < Command
+    def call
+      mode.stat
+    end
+  end
+
+  class ListCommand < Command
+    def call
+      split_arguments.empty? ?
+        mode.list_all : mode.list(*split_arguments)
+    end
+  end
+
+  class RetrCommand < Command
+    def call
+      mode.retr *split_arguments
+    end
+  end
+
+  class DeleCommand < Command
+    def call
+      mode.dele *split_arguments
+    end
+  end
+
+  class NoopCommand < Command
+    def call
+      mode.noop
+    end
+  end
+
+  class RsetCommand < Command
+    def call
+      mode.rset
+    end
+  end
+
+  class QuitCommand < Command
+    def call
+      mode.quit
+    end
+  end
 end

@@ -50,7 +50,7 @@ module Dannunzio
     end
 
     def quit
-      session.update!
+      session.update
     end
 
     private

@@ -28,7 +28,6 @@ module Dannunzio
     end
 
     it "closes the session" do
-      client.should_receive(:print).with "+OK D'Annunzio signing off\r\n"
       client.should_receive(:close)
       session.close
     end
@@ -40,6 +39,15 @@ module Dannunzio
 
       session.acquire_lock! "kofno", "secret"
       expect(session.mode).to be_kind_of(TransactionMode)
+    end
+
+    it "updates and releases lock" do
+      session.should_receive(:lock).and_return lock
+      lock.should_receive(:clean_and_release)
+      client.should_receive(:print).with "+OK D'Annunzio signing off\r\n"
+      client.should_receive(:close)
+
+      session.update
     end
 
   end

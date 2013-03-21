@@ -14,6 +14,7 @@ module Dannunzio
     end
 
     def quit
+      session.send_sign_off
       session.close
     end
 

@@ -9,6 +9,7 @@ module Dannunzio
     describe "client sessions sending a QUIT command" do
 
       it "are ended immediately" do
+        session.should_receive(:send_sign_off)
         session.should_receive(:close)
         mode.quit
       end

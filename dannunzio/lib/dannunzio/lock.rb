@@ -9,6 +9,9 @@ module Dannunzio
     many_to_many :undeleted_messages, class: 'Dannunzio::Message',
       join_table: :locked_messages, right_key: :message_id,
       conditions: { marked_deleted: false }
+    many_to_many :deleted_messages, class: 'Dannunzio::Message',
+      join_table: :locked_messages, right_key: :message_id,
+      conditions: { marked_deleted: true }
 
     def lock_messages
       locked_messages_dataset.insert(lockable_messages)
@@ -41,6 +44,11 @@ module Dannunzio
       locked_messages_dataset.update(marked_deleted: false)
     end
 
+    def clean_and_release
+      remove_all_deleted_messages
+      destroy
+    end
+
     private
 
     def raise_no_message!
@@ -48,7 +56,11 @@ module Dannunzio
     end
 
     def undeleted_message scan_id
-      undeleted_message_dataset(scan_id).first or raise 'no such message'
+      undeleted_message_dataset(scan_id).first or raise_no_message!
+    end
+
+    def undeleted_message_dataset scan_id
+      undeleted_messages_dataset.where(index: scan_id)
     end
 
     def lockable_messages
@@ -57,10 +69,6 @@ module Dannunzio
       index_lit   = Sequel.function :rownum
       dataset     = maildrop.messages_dataset
       dataset.select id_lit, :id, deleted_lit, index_lit
-    end
-
-    def undeleted_message_dataset scan_id
-      undeleted_messages_dataset.where(index: scan_id)
     end
 
   end

@@ -54,6 +54,12 @@ module Dannunzio
       lock.undelete_all
       expect(lock.message_content(3)).to eq(msg3[:content].split("\r\n"))
     end
+
+    it 'removes deleted messages and destroys self' do
+      lock.clean_and_release
+      expect(lock.deleted_messages).to be_empty
+      expect(lock).to_not be_exists
+    end
   end
 
 end

@@ -89,7 +89,7 @@ module Dannunzio
     end
 
     it 'responds to QUIT' do
-      session.should_receive(:update!)
+      session.should_receive(:update)
 
       mode.quit
     end
