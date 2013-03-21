@@ -16,9 +16,11 @@ module Dannunzio
     end
 
     def start
+      Dannunzio.logger.info 'Starting server'
       loop do
         start_thread
       end
+      Dannunzio.logger.info 'Server stopped'
     end
 
     private
@@ -30,8 +32,11 @@ module Dannunzio
     end
 
     def start_session client
+      Dannunzio.logger.info 'Starting a session'
       session = Session.new client
       session.start
+    rescue => e
+      Dannunzio.logger.error e
     end
 
     def tcp_server

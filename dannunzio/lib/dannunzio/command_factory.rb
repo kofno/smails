@@ -8,19 +8,19 @@ module Dannunzio
         UserCommand.new request
       when "PASS "
         PassCommand.new request
-      when "QUIT "
+      when "QUIT"
         QuitCommand.new request
-      when "STAT "
+      when "STAT"
         StatCommand.new request
-      when "LIST "
+      when /LIST ?/
         ListCommand.new request
       when "RETR "
         RetrCommand.new request
       when "DELE "
         DeleCommand.new request
-      when "NOOP "
+      when "NOOP"
         NoopCommand.new request
-      when "RSET "
+      when "RSET"
         RsetCommand.new request
       else
         raise UnsupportedCommand

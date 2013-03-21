@@ -5,9 +5,11 @@ module Dannunzio
   module CommandProcessor
 
     def process_command request
+      Dannunzio.logger.debug "Received: #{request}"
       command = parser.parse request
       command.execute self
     rescue UnsupportedCommand => e
+      Dannunzio.logger.error e
       unsupported_command
     end
 
