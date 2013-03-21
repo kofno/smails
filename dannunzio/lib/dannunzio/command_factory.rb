@@ -3,7 +3,7 @@ module Dannunzio
   class CommandFactory
 
     def self.parse request
-      case request[0..4].upcase
+      case request.chomp[0..4].upcase
       when "USER "
         UserCommand.new request
       when "PASS "

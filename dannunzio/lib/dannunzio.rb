@@ -12,6 +12,13 @@ module Dannunzio
   autoload :Command,           'dannunzio/command'
   autoload :UserCommand,       'dannunzio/command'
   autoload :PassCommand,       'dannunzio/command'
+  autoload :QuitCommand,       'dannunzio/command'
+  autoload :StatCommand,       'dannunzio/command'
+  autoload :ListCommand,       'dannunzio/command'
+  autoload :RetrCommand,       'dannunzio/command'
+  autoload :DeleCommand,       'dannunzio/command'
+  autoload :NoopCommand,       'dannunzio/command'
+  autoload :RsetCommand,       'dannunzio/command'
 
   autoload :DB,                'dannunzio/db'
   autoload :Schema,            'dannunzio/schema'
