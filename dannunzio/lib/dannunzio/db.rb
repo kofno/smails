@@ -6,9 +6,9 @@ Jdbc::HSQLDB.load_driver
 
 module Dannunzio
 
-  DB = Sequel.connect 'jdbc:hsqldb:file:~/.dannunzio/db/pop',
+  DB = Sequel.connect "jdbc:hsqldb:file:#{ENV['DANNUNZIO_DB'] || '~/.dannunzio/db/pop'}",
     user: 'SA', password: ''
-  DB.logger = Logger.new('log/test.log', 'daily')
+  DB.logger = logger
 
   Sequel::Model.db = DB
 
