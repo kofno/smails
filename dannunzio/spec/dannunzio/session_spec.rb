@@ -10,7 +10,7 @@ module Dannunzio
     let(:session) { Session.new client }
 
     it "starts the sessions" do
-      client.should_receive(:print).with "+OK D'Annunzio POP3 is ready!\r\n"
+      client.should_receive(:write).with "+OK D'Annunzio POP3 is ready!\r\n"
       client.should_receive(:gets).and_return nil
 
       session.start
@@ -18,12 +18,12 @@ module Dannunzio
     end
 
     it "sends +OK messages" do
-      client.should_receive(:print).with "+OK foo\r\n"
+      client.should_receive(:write).with "+OK foo\r\n"
       session.send_ok "foo"
     end
 
     it "sends -ERR messages" do
-      client.should_receive(:print).with "-ERR foo\r\n"
+      client.should_receive(:write).with "-ERR foo\r\n"
       session.send_err "foo"
     end
 
@@ -44,12 +44,21 @@ module Dannunzio
     it "updates and releases lock" do
       session.should_receive(:lock).and_return lock
       lock.should_receive(:clean_and_release)
-      client.should_receive(:print).with "+OK D'Annunzio signing off\r\n"
+      client.should_receive(:write).with "+OK D'Annunzio signing off\r\n"
       client.should_receive(:close)
 
       session.update
     end
 
+    describe "sending multiple lines in a response" do
+      it "wraps output with +OK and terminating character" do
+        client.should_receive(:write).with "+OK \r\n"
+        client.should_receive(:write).with "A single line\r\n"
+        client.should_receive(:write).with ".\r\n"
+
+        session.send_multi "A single line"
+      end
+    end
   end
 
 end

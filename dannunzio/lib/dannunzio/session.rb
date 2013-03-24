@@ -16,11 +16,17 @@ module Dannunzio
     end
 
     def send_ok msg=""
-      client.print "+OK #{msg}\r\n"
+      client.write "+OK #{msg}".pop_terminate
     end
 
     def send_err msg=""
-      client.print "-ERR #{msg}\r\n"
+      client.write "-ERR #{msg}".pop_terminate
+    end
+
+    def send_multi msg
+      send_ok
+      send_lines msg
+      send_terminate_multi
     end
 
     def send_sign_off
@@ -59,6 +65,16 @@ module Dannunzio
 
     def send_greeting
       send_ok "D'Annunzio POP3 is ready!"
+    end
+
+    def send_lines msg
+      msg.each_line do |line|
+        client.write line.pop_terminate
+      end
+    end
+
+    def send_terminate_multi
+      client.write '.'.pop_terminate
     end
 
     def authorization_mode

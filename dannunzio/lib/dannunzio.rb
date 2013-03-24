@@ -1,4 +1,5 @@
 require 'logger'
+require 'dannunzio/core_ext/string'
 
 module Dannunzio
 
