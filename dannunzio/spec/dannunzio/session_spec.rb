@@ -58,6 +58,23 @@ module Dannunzio
 
         session.send_multi "A single line"
       end
+
+      it "send each line" do
+        client.should_receive(:write).with("+OK \r\n")
+        client.should_receive(:write).with("Line one\r\n")
+        client.should_receive(:write).with("Line two\r\n")
+        client.should_receive(:write).with(".\r\n")
+
+        session.send_multi "Line one\r\nLine two"
+      end
+
+      it "byte stuffs '.', when encountered" do
+        client.should_receive(:write).with("+OK \r\n")
+        client.should_receive(:write).with("..A bytestuffed line\r\n")
+        client.should_receive(:write).with(".\r\n")
+
+        session.send_multi ".A bytestuffed line"
+      end
     end
   end
 
