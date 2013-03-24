@@ -3,34 +3,6 @@ require 'dannunzio/core_ext/string'
 
 module Dannunzio
 
-  autoload :Server,            'dannunzio/server'
-  autoload :Session,           'dannunzio/session'
-  autoload :AuthorizationMode, 'dannunzio/authorization_mode'
-  autoload :TransactionMode,   'dannunzio/transaction_mode'
-
-  autoload :CommandProcessor,  'dannunzio/command_processor'
-  autoload :CommandFactory,    'dannunzio/command_factory'
-  autoload :Command,           'dannunzio/command'
-  autoload :UserCommand,       'dannunzio/command'
-  autoload :PassCommand,       'dannunzio/command'
-  autoload :QuitCommand,       'dannunzio/command'
-  autoload :StatCommand,       'dannunzio/command'
-  autoload :ListCommand,       'dannunzio/command'
-  autoload :RetrCommand,       'dannunzio/command'
-  autoload :DeleCommand,       'dannunzio/command'
-  autoload :NoopCommand,       'dannunzio/command'
-  autoload :RsetCommand,       'dannunzio/command'
-
-  autoload :DB,                'dannunzio/db'
-  autoload :Schema,            'dannunzio/schema'
-  autoload :Maildrop,          'dannunzio/maildrop'
-  autoload :Lock,              'dannunzio/lock'
-  autoload :LockedMessage,     'dannunzio/locked_message'
-  autoload :Message,           'dannunzio/message'
-
-  autoload :DropListing,       'dannunzio/drop_listing'
-  autoload :ScanListings,      'dannunzio/scan_listings'
-
   class << self
     def logger
       @@logger ||= define_logger
@@ -47,3 +19,22 @@ module Dannunzio
     end
   end
 end
+
+require 'dannunzio/db'
+require 'dannunzio/schema'
+require 'dannunzio/maildrop'
+require 'dannunzio/lock'
+require 'dannunzio/locked_message'
+require 'dannunzio/message'
+
+require 'dannunzio/drop_listing'
+require 'dannunzio/scan_listings'
+
+require 'dannunzio/command'
+require 'dannunzio/command_processor'
+require 'dannunzio/command_factory'
+
+require 'dannunzio/server'
+require 'dannunzio/session'
+require 'dannunzio/authorization_mode'
+require 'dannunzio/transaction_mode'

@@ -86,10 +86,12 @@ module Dannunzio
     end
 
     def receive_commands
-      while command = client.gets
+      until client.closed?
+        command = client.gets
         mode.process_command command
       end
     end
+
   end
 
 end

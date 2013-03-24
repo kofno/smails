@@ -4,8 +4,8 @@ module Dannunzio
     attr_reader :request, :mode, :arguments
 
     def initialize request
-      @request = request
-      @arguments = request.split(' ', 2).last
+      @request = request.rstrip
+      @arguments = @request.split(' ', 2)[1] || ''
     end
 
     def execute mode

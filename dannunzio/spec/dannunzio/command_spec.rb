@@ -30,11 +30,29 @@ module Dannunzio
     describe PassCommand do
       let(:pass) { PassCommand.new "PASS my voice is my passport" }
 
-      it "executes the command with proper arguments" do
+      it "treats all arguments as one whitespaced password" do
         pass.should_receive(:mode).and_return mode
         mode.should_receive(:pass).with "my voice is my passport"
 
         pass.call
+      end
+
+      it "removes trailing new lines" do
+        pass = PassCommand.new "PASS secret\r\n"
+        pass.should_receive(:mode).and_return mode
+        mode.should_receive(:pass).with "secret"
+
+        pass.call
+      end
+    end
+
+    describe ListCommand do
+      it "calls the proper list command for no argument version" do
+        list = ListCommand.new "LIST"
+        list.should_receive(:mode).and_return mode
+        mode.should_receive(:list_all).with(no_args)
+
+        list.call
       end
     end
   end

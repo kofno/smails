@@ -11,7 +11,7 @@ module Dannunzio
 
     it "starts the sessions" do
       client.should_receive(:write).with "+OK D'Annunzio POP3 is ready!\r\n"
-      client.should_receive(:gets).and_return nil
+      client.should_receive(:closed?).and_return true
 
       session.start
       expect(session.mode).to be_kind_of(AuthorizationMode)
