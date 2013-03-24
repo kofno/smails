@@ -17,6 +17,9 @@ module Dannunzio
       }
     end
 
+    # Behave like a multi-line string
+    alias_method :each_line, :each
+
     def filter_by_scan_id scan_id
       dataset.where(index: scan_id).map { |record|
         format_listing record
