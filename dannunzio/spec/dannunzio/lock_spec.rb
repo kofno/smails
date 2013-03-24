@@ -37,9 +37,7 @@ module Dannunzio
 
     it 'returns the content of a message' do
       content = lock.message_content 1
-      expect(content.size).to eq(2)
-      expect(content[0]).to eq('<Example 1>')
-      expect(content[1]).to eq('<Line 2>')
+      expect(content).to eq(msg1[:content])
     end
 
     it 'raises an error when trying to return a deleted message' do
@@ -52,7 +50,7 @@ module Dannunzio
 
     it 'undeletes all messages' do
       lock.undelete_all
-      expect(lock.message_content(3)).to eq(msg3[:content].split("\r\n"))
+      expect(lock.message_content(3)).to eq(msg3[:content])
     end
 
     it 'removes deleted messages and destroys self' do

@@ -37,7 +37,7 @@ module Dannunzio
     end
 
     def message_content scan_id
-      undeleted_message(scan_id).content.split("\r\n")
+      undeleted_message(scan_id).content
     end
 
     def undelete_all
