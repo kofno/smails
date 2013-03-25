@@ -30,22 +30,28 @@ module Dannunzio
     end
 
     def mark_deleted scan_id
-      dataset = locked_messages_dataset.where(marked_deleted: false, index: scan_id)
-      unless dataset.update(marked_deleted: true) > 0
+      msg = locked_messages.find { |m| m.index == scan_id }
+      msg && !msg.marked_deleted ?
+        msg.update(marked_deleted: true) :
         raise_no_message!
-      end
     end
 
     def message_content scan_id
-      undeleted_message(scan_id).content
+      messages = messages { |ds| ds.where(marked_deleted: false, index: scan_id) }
+      message = messages.first || raise_no_message!
+      message.content
     end
 
     def undelete_all
-      locked_messages_dataset.update(marked_deleted: false)
+      locked_messages { |ds| ds.where(marked_deleted: true) }.each { |rec|
+        rec.update(marked_deleted: false)
+      }
     end
 
     def clean_and_release
-      remove_all_deleted_messages
+      messages { |ds| ds.where(marked_deleted: true) }.each { |msg|
+        msg.destroy
+      }
       destroy
     end
 
