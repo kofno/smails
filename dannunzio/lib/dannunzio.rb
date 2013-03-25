@@ -1,5 +1,4 @@
 require 'logger'
-require 'dannunzio/core_ext/string'
 
 module Dannunzio
 
@@ -20,8 +19,9 @@ module Dannunzio
   end
 end
 
+require 'dannunzio/core_ext/string'
+
 require 'dannunzio/db'
-require 'dannunzio/schema'
 require 'dannunzio/maildrop'
 require 'dannunzio/lock'
 require 'dannunzio/locked_message'

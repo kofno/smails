@@ -1,11 +1,11 @@
-require 'dannunzio'
-
 ENV['DANNUNZIO_DB'] = '~/.dannunzio/db/test'
 
 RSpec.configure do |c|
 
   c.before :suite do
+    require 'dannunzio/schema'
     Dannunzio::Schema.load
+    require 'dannunzio'
   end
 
   c.around :each do |example|

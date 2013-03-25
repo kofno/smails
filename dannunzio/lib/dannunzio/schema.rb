@@ -1,3 +1,5 @@
+require 'dannunzio/db'
+
 module Dannunzio
 
   class Schema
