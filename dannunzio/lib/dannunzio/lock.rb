@@ -1,5 +1,3 @@
-require 'set'
-
 module Dannunzio
 
   class Lock
@@ -9,66 +7,68 @@ module Dannunzio
 
     def initialize maildrop
       @maildrop = maildrop
-      @locked_messages = maildrop.messages.dup
+      populate_locked_messages
     end
 
     def mark_deleted index
-      deleted_messages << undeleted_message(index)
+      deleted_messages[index] = locked_message index
+      locked_messages.delete(index)
     end
 
     def clear_deleted_messages
-      maildrop.remove_messages deleted_messages
+      maildrop.remove_messages deleted_messages.values
       deleted_messages.clear
     end
 
     def undelete_all
+      deleted_messages.each do |index, msg|
+        locked_messages[index] = msg
+      end
       deleted_messages.clear
     end
 
     def message_content index
-      msg = undeleted_message index
-      msg.content
+      locked_message(index).content
     end
 
     def scan_listing index
-      msg = undeleted_message index
-      "#{index} #{msg.octets}"
+      msg = locked_message(index)
+      format_listing index, msg.octets
     end
 
     def scan_listings
-      i = 0
-      undeleted_messages.map do |msg|
-        i += 1
-        scan_listing(i) unless msg.nil?
-      end.compact
+      locked_messages.map { |index, msg| format_listing index, msg.octets }
     end
 
     def drop_listing
-      drop_listing = undeleted_messages.compact
+      drop_listing = locked_messages.values
       size = drop_listing.size
       sum  = drop_listing.reduce(0) { |sum, msg|
         sum += msg.octets
         sum
       }
-      "#{size} #{sum}"
+      format_listing size, sum
     end
 
     private
 
-    def undeleted_message index
-      msg = undeleted_messages[index - 1]
-      raise 'no such message' if msg.nil?
-      msg
+    def locked_message index
+      locked_messages.fetch(index) { raise 'no such message' }
     end
 
     def deleted_messages
-      @deleted_messages ||= Set.new
+      @deleted_messages ||= {}
     end
 
-    def undeleted_messages
-      locked_messages.map { |msg|
-        msg unless deleted_messages.include?(msg)
-      }
+    def populate_locked_messages
+      @locked_messages = {}
+      maildrop.messages.each_with_index do |msg, i|
+        @locked_messages[i] = msg
+      end
+    end
+
+    def format_listing(val1, val2)
+      "#{val1} #{val2}"
     end
   end
 
