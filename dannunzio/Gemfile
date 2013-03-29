@@ -1,7 +1,5 @@
 source "https://rubygems.org"
 
-gem 'jdbc-hsqldb'
-gem 'sequel'
 gem 'bcrypt-ruby'
 
 group :test, :development do

@@ -1,41 +1,59 @@
-require 'dannunzio/db'
 require 'bcrypt'
+require 'dannunzio/lock'
 
 module Dannunzio
 
-  class Maildrop < Sequel::Model
+  class Maildrop
     include BCrypt
-    include Sequel
 
-    one_to_many :locks
-    one_to_many :messages
+    attr_accessor :username
+    attr_reader   :lock
 
-    def self.find_by_username! username
-      drop = find username: username
-      raise 'invalid credentials' unless drop
-      drop
-    end
-
-    def authenticate! password
-      unless self.password == password
-        raise 'invalid credentials'
+    def initialize attributes={}
+      attributes.each do |key, value|
+        __send__ "#{key}=", value
       end
     end
 
+    def <<(message)
+      messages << message
+    end
+
+    def authenticate! password
+      raise 'invalid credentials' unless self.password == password
+    end
+
     def acquire_lock!
-      lock = add_lock({})
-      lock.lock_messages
-      lock
-    rescue UniqueConstraintViolation
-      raise 'unable to lock maildrop'
+      raise "unable to lock maildrop" if locked?
+      @lock = Lock.new self
+    end
+
+    def locked?
+      !@lock.nil?
+    end
+
+    def remove_messages dead_messages
+      self.messages.delete_if do |msg|
+        dead_messages.include? msg
+      end
+    end
+
+    def messages
+      @messages ||= []
     end
 
     def password=(password)
-      self[:password] = Password.create password
+      @password = Password.create(password, cost: cost)
     end
 
     def password
-      Password.new self[:password]
+      Password.new @password
+    end
+
+    private
+
+    def cost
+      (ENV['DANNUNZIO_BCRYPT_COST'] || BCrypt::Engine::DEFAULT_COST).to_i
     end
 
   end

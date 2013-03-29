@@ -1,34 +1,40 @@
 require 'spec_helper'
+require 'dannunzio/lock'
+require 'dannunzio/maildrop'
+require 'dannunzio/message'
 
 module Dannunzio
 
   describe Lock do
-    let(:drop) { Maildrop.create username: 'kofno', password: 'secret' }
+    let(:msg1) { "<Example 1>\r\n<Line 2>" }
+    let(:msg2) { "<Example 2>\r\n<Line 2>" }
+    let(:msg3) { "<Example 3>\r\n<Line 2>" }
+    let(:drop) {
+      drop = Maildrop.new
+      drop << Message.new(msg1)
+      drop << Message.new(msg2)
+      drop << Message.new(msg3)
+      drop
+    }
     let(:lock) { drop.acquire_lock! }
-    let(:msg1) { { content: "<Example 1>\r\n<Line 2>", octets: 212 } }
-    let(:msg2) { { content: "<Example 2>\r\n<Line 2>", octets: 108 } }
-    let(:msg3) { { content: "<Example 3>\r\n<Line 2>", octets: 101 } }
 
     before :each do
-      drop.add_message msg1
-      drop.add_message msg2
-      drop.add_message msg3
       lock.mark_deleted 3
     end
 
     it 'returns message stats' do
-      expect(lock.drop_listing.to_s).to eql('2 320')
+      expect(lock.drop_listing.to_s).to eql('2 42')
     end
 
     it 'returns a full scan listing' do
-      listings = lock.scan_listings.map { |s| s }
+      listings = lock.scan_listings
       expect(listings.size).to eq(2)
-      expect(listings[0].to_s).to eq('1 212')
-      expect(listings[1].to_s).to eq('2 108')
+      expect(listings[0].to_s).to eq('1 21')
+      expect(listings[1].to_s).to eq('2 21')
     end
 
     it 'returns a single scan listing' do
-      expect(lock.scan_listing(2).to_s).to eq('2 108')
+      expect(lock.scan_listing(2).to_s).to eq('2 21')
     end
 
     it 'raises an error when single listing a deleted message' do
@@ -37,7 +43,7 @@ module Dannunzio
 
     it 'returns the content of a message' do
       content = lock.message_content 1
-      expect(content).to eq(msg1[:content])
+      expect(content).to eq(msg1)
     end
 
     it 'raises an error when trying to return a deleted message' do
@@ -50,13 +56,12 @@ module Dannunzio
 
     it 'undeletes all messages' do
       lock.undelete_all
-      expect(lock.message_content(3)).to eq(msg3[:content])
+      expect(lock.message_content(3)).to eq(msg3)
     end
 
-    it 'removes deleted messages and destroys self' do
-      lock.clean_and_release
-      expect(lock.deleted_messages).to be_empty
-      expect(lock).to_not be_exists
+    it 'completely destroys messages marked deleted' do
+      lock.clear_deleted_messages
+      expect(drop.messages.size).to eq(2)
     end
   end
 

@@ -1,4 +1,5 @@
 require 'forwardable'
+require 'dannunzio/command_processor'
 
 module Dannunzio
 

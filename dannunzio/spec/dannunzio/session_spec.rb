@@ -1,13 +1,19 @@
 require 'spec_helper'
+require 'dannunzio/session'
 
 module Dannunzio
 
   describe Session do
     let(:client)  { double :client }
-    let(:store)   { double :store }
-    let(:drop)    { double :maildrop }
-    let(:lock)    { double :lock }
-    let(:session) { Session.new client }
+    let(:maildrops) {
+      maildrops = Maildrops.new
+      maildrops << Maildrop.new(username: 'kofno', password: 'secret')
+      maildrops
+    }
+    let(:session) {
+      Session.new client: client,
+                  maildrops: maildrops
+    }
 
     it "starts the sessions" do
       client.should_receive(:write).with "+OK D'Annunzio POP3 is ready!\r\n"
@@ -33,20 +39,16 @@ module Dannunzio
     end
 
     it "acquires a mail drop lock" do
-      Maildrop.should_receive(:find_by_username!).with("kofno").and_return drop
-      drop.should_receive(:authenticate!).with('secret').and_return true
-      drop.should_receive(:acquire_lock!).and_return lock
-
       session.acquire_lock! "kofno", "secret"
+      expect(session.lock).to_not be_nil
       expect(session.mode).to be_kind_of(TransactionMode)
     end
 
     it "updates and releases lock" do
-      session.should_receive(:lock).and_return lock
-      lock.should_receive(:clean_and_release)
+      session.acquire_lock! "kofno", "secret"
+      
       client.should_receive(:write).with "+OK D'Annunzio signing off\r\n"
       client.should_receive(:close)
-
       session.update
     end
 

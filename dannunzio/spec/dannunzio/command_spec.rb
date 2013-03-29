@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'dannunzio/command'
 
 module Dannunzio
 

@@ -1,13 +1,13 @@
-require 'dannunzio/db'
-
 module Dannunzio
 
-  class Message < Sequel::Model
-    plugin :lazy_attributes, :content
+  class Message
 
-    many_to_one :maildrop
-    one_to_one  :locked_message
-    one_to_one  :lock
+    attr_reader :content, :octets
+
+    def initialize content
+      @content = content
+      @octets  = content.bytesize
+    end
   end
 
 end
