@@ -1,4 +1,4 @@
-require_relative 'memory_storage'
+require_relative 'storage'
 
 module Dannunzio
 
@@ -22,7 +22,7 @@ module Dannunzio
     end
 
     def storage
-      @storage ||= MemoryStorage.new
+      @storage ||= Storage.for(:maildrops)
     end
   end
 
