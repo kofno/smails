@@ -1,4 +1,4 @@
-require 'dannunzio/maildrop'
+require_relative 'memory_storage'
 
 module Dannunzio
 
@@ -18,12 +18,11 @@ module Dannunzio
     private
 
     def fetch options
-      storage.find { |drop| drop.username == options[:username] } ||
-        raise('invalid credentials')
+      storage.fetch_by_username(options[:username]) || raise('invalid credentials')
     end
 
     def storage
-      @storage ||= []
+      @storage ||= MemoryStorage.new
     end
   end
 
