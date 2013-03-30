@@ -1,3 +1,5 @@
+require_relative 'command'
+
 module Dannunzio
 
   class CommandFactory

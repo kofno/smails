@@ -20,3 +20,4 @@ module Dannunzio
 end
 
 require 'dannunzio/core_ext/string'
+require 'dannunzio/server'

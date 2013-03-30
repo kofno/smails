@@ -1,4 +1,5 @@
 require 'socket'
+require_relative 'session'
 
 module Dannunzio
 
@@ -13,10 +14,12 @@ module Dannunzio
 
     def initialize args={}
       @port = args.fetch :port, 110
+      trap(:INT) { exit }
     end
 
     def start
       Dannunzio.logger.info 'Starting server'
+      Thread.abort_on_exception = true
       loop do
         start_thread
       end
@@ -33,7 +36,7 @@ module Dannunzio
 
     def start_session client
       Dannunzio.logger.info 'Starting a session'
-      session = Session.new client
+      session = Session.new client: client
       session.start
     rescue => e
       Dannunzio.logger.error e

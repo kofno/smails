@@ -6,6 +6,8 @@ module Dannunzio
 
     class SampleProcessor
       include CommandProcessor
+
+      def user arg; 'all good';end
     end
 
     let(:processor) { SampleProcessor.new }
@@ -15,18 +17,12 @@ module Dannunzio
     describe "processing commands" do
 
       it "parses and executes the command" do
-        processor.should_receive(:parser).and_return parser
-        parser.should_receive(:parse).with('USER kofno').and_return command
-        command.should_receive(:execute).with processor
-
-        processor.process_command 'USER kofno'
+        result = processor.process_command 'USER kofno'
+        expect(result).to eq('all good')
       end
 
       it "handles unsupported commands gracefully" do
-        processor.should_receive(:parser).and_return parser
-        parser.should_receive(:parse).and_raise UnsupportedCommand
-        processor.should_receive(:unsupported_command)
-
+        processor.should_receive(:send_err).with('unrecognized command')
         processor.process_command "HAL 9000"
       end
     end

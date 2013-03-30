@@ -1,3 +1,5 @@
+require_relative 'command_factory'
+
 module Dannunzio
 
   class UnsupportedCommand < StandardError; end
@@ -14,7 +16,7 @@ module Dannunzio
     end
 
     def parser
-      CommandFactory
+      Dannunzio::CommandFactory
     end
 
     def unsupported_command
