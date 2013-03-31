@@ -1,4 +1,5 @@
 require_relative 'storage/memory_maildrops'
+require_relative 'storage/memory_messages'
 
 module Dannunzio
 
@@ -32,6 +33,7 @@ module Dannunzio
     def build_storage
       @stores = {}
       @stores[:maildrops] = MemeryMaildrops.new
+      @stores[:messages]  = MemoryMessages.new
     end
 
   end

@@ -39,7 +39,7 @@ module Dannunzio
     end
 
     def messages
-      @messages ||= []
+      Storage.for(:messages)[self]
     end
 
     def password=(password)
