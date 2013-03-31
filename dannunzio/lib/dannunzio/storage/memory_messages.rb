@@ -34,9 +34,11 @@ module Dannunzio
         self
       end
 
-      def delete_if(&block)
+      def delete_all(dead_messages)
         @mutex.synchronize {
-          @collection.delete_if &block
+          @collection.delete_if do |message|
+            dead_messages.include? message
+          end
         }
         self
       end

@@ -33,9 +33,7 @@ module Dannunzio
     end
 
     def remove_messages dead_messages
-      self.messages.delete_if do |msg|
-        dead_messages.include? msg
-      end
+      self.messages.delete_all(dead_messages)
     end
 
     def messages
