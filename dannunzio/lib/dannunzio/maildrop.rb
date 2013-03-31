@@ -7,7 +7,6 @@ module Dannunzio
     include BCrypt
 
     attr_accessor :username
-    attr_reader   :lock
 
     def initialize attributes={}
       attributes.each do |key, value|
@@ -24,12 +23,13 @@ module Dannunzio
     end
 
     def acquire_lock!
-      raise "unable to lock maildrop" if locked?
-      @lock = Lock.new self
+      self.lock = Lock.new self
+    rescue LockAlreadyExists
+      raise "unable to lock maildrop"
     end
 
     def locked?
-      !@lock.nil?
+      !self.lock.nil?
     end
 
     def remove_messages dead_messages
@@ -40,6 +40,14 @@ module Dannunzio
 
     def messages
       Storage.for(:messages)[self]
+    end
+
+    def lock=(lock)
+      Storage.for(:locks)[self] = lock
+    end
+
+    def lock
+      Storage.for(:locks)[self]
     end
 
     def password=(password)
