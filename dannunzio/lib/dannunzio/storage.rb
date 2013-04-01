@@ -1,6 +1,6 @@
-require_relative 'storage/memory_maildrops'
-require_relative 'storage/memory_messages'
-require_relative 'storage/memory_locks'
+require_relative 'storage/memory/maildrops'
+require_relative 'storage/memory/messages'
+require_relative 'storage/memory/locks'
 
 module Dannunzio
 
@@ -33,9 +33,9 @@ module Dannunzio
 
     def build_storage
       @stores = {}
-      @stores[:maildrops] = MemeryMaildrops.new
-      @stores[:messages]  = MemoryMessages.new
-      @stores[:locks]     = MemoryLocks.new
+      @stores[:maildrops] = Memory::Maildrops.new
+      @stores[:messages]  = Memory::Messages.new
+      @stores[:locks]     = Memory::Locks.new
     end
 
   end
