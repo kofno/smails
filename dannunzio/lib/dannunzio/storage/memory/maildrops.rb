@@ -7,6 +7,14 @@ module Dannunzio
         Storage::MUTEX.synchronize { maildrops << maildrop }
       end
 
+      def size
+        Storage::MUTEX.synchronize { maildrops.size }
+      end
+
+      def empty?
+        Storage::MUTEX.synchronize { maildrops.empty? }
+      end
+
       def fetch_by_username username
         Storage::MUTEX.synchronize {
           maildrops.find { |maildrop| maildrop.username == username }

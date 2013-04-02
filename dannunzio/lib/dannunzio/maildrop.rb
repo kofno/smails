@@ -28,10 +28,6 @@ module Dannunzio
       raise "unable to lock maildrop"
     end
 
-    def locked?
-      !self.lock.nil?
-    end
-
     def remove_messages dead_messages
       self.messages.delete_all(dead_messages)
     end
