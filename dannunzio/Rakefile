@@ -1,0 +1,12 @@
+$:.unshift File.expand_path('../lib', __FILE__)
+
+require 'dannunzio'
+
+namespace :db do
+
+  desc 'Load the database schema'
+  task :load do
+    require 'dannunzio/storage/sql/schema'
+    Dannunzio::SQL::Schema.load
+  end
+end
