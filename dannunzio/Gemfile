@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 
 gem 'bcrypt-ruby'
+gem 'sqlite3'
 
 group :test, :development do
   gem 'rspec'
