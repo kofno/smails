@@ -5,6 +5,7 @@ module Dannunzio
 
       def <<(maildrop)
         Storage::MUTEX.synchronize { maildrops << maildrop }
+        self
       end
 
       def size

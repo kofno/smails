@@ -6,7 +6,7 @@ module Dannunzio
     module Connection
 
       class << self
-        def create_connection
+        def connection
           @connection ||= Sequel.connect(connection_url)
         end
 
@@ -28,7 +28,7 @@ module Dannunzio
       private
 
       def create_connection
-        Connection.create_connection
+        Connection.connection
       end
 
     end

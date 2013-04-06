@@ -1,4 +1,5 @@
 require 'bcrypt'
+require 'securerandom'
 require 'dannunzio/lock'
 
 module Dannunzio
@@ -50,6 +51,22 @@ module Dannunzio
 
     def password
       Password.new @password
+    end
+
+    def identifier
+      @identifier ||= SecureRandom.uuid
+    end
+
+    def identifier=(id)
+      @identifier = id
+    end
+
+    def to_record
+      {
+        identifier: identifier,
+        username:   username,
+        password:   password
+      }
     end
 
     private
