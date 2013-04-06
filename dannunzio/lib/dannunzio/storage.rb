@@ -8,17 +8,20 @@ module Dannunzio
 
     MUTEX = Mutex.new
 
+    def self.register thing, impl
+      MUTEX.synchronize { stores[thing] = impl }
+    end
+
     def self.for thing
-      MUTEX.synchronize {
-        @stores ||= new
-        @stores[thing]
-      }
+      MUTEX.synchronize { stores[thing] }
+    end
+
+    def self.stores
+      @stores ||= new
     end
 
     def self.reset
-      MUTEX.synchronize {
-        @stores = nil
-      }
+      MUTEX.synchronize { @stores = nil }
     end
 
     def initialize
@@ -27,6 +30,10 @@ module Dannunzio
 
     def [](thing)
       @stores[thing]
+    end
+
+    def []=(thing, impl)
+      @stores[thing] = impl
     end
 
     private
