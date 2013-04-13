@@ -13,15 +13,22 @@ module Dannunzio
         @mutex = Mutex.new
       end
 
-      def [](key)
-        Storage::MUTEX.synchronize{ locks[key] }
+      def get(maildrop)
+        Storage::MUTEX.synchronize{ locks[maildrop] }
+      end
+      alias_method :[], :get
+
+      def create args
+        maildrop = args[:for]
+        @mutex.synchronize {
+          raise LockAlreadyExists if get(maildrop)
+          locks[maildrop] = Lock.new(maildrop)
+        }
       end
 
-      def []=(key, value)
-        @mutex.synchronize {
-          raise LockAlreadyExists if value && !self[key].nil?
-          locks[key] = value
-        }
+      def release args
+        maildrop = args[:for]
+        @mutex.synchronize { locks.delete(maildrop) }
       end
 
     end
@@ -29,3 +36,4 @@ module Dannunzio
   end
 
 end
+

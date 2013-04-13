@@ -12,6 +12,7 @@ module Dannunzio
 
       def load_all
         load_maildrops
+        load_locks
       end
 
       def load_maildrops
@@ -21,6 +22,14 @@ module Dannunzio
           String :password, null: false
         end
       end
+
+      def load_locks
+        db.create_table :locks do
+          primary_key :id
+          String :maildrop_id, null: false, unique: true
+        end
+      end
+
     end
   end
 end

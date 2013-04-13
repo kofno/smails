@@ -8,6 +8,7 @@ module Dannunzio
 
     it_behaves_like "locks storage" do
       let(:locks) { Storage.for(:locks) }
+      let(:maildrops) { Storage.for(:maildrops) }
     end
 
   end

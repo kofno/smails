@@ -24,7 +24,7 @@ module Dannunzio
     end
 
     def acquire_lock!
-      self.lock = Lock.new self
+      locks.create for: self
     rescue LockAlreadyExists
       raise "unable to lock maildrop"
     end
@@ -37,12 +37,8 @@ module Dannunzio
       Storage.for(:messages)[self]
     end
 
-    def lock=(lock)
-      Storage.for(:locks)[self] = lock
-    end
-
-    def lock
-      Storage.for(:locks)[self]
+    def locks
+      Storage.for(:locks)
     end
 
     def password=(password)

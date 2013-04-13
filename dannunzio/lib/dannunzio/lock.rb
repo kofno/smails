@@ -50,6 +50,10 @@ module Dannunzio
       format_listing size, sum
     end
 
+    def ==(other)
+      maildrop.identifier == other.maildrop.identifier
+    end
+
     private
 
     def locked_message index

@@ -22,6 +22,14 @@ module Dannunzio
         }
       end
 
+      def first
+        Storage::MUTEX.synchronize { maildrops.first }
+      end
+
+      def last
+        Storage::MUTEX.synchronize { maildrops.last }
+      end
+
       private
 
       def maildrops

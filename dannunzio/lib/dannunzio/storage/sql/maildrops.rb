@@ -18,6 +18,14 @@ module Dannunzio
         db[:maildrops].insert maildrop.to_record
       end
 
+      def first
+        Maildrop.new db[:maildrops].all.first
+      end
+
+      def last
+        Maildrop.new db[:maildrops].all.last
+      end
+
       def fetch_by_username(username)
         record = db[:maildrops].filter(username: username).first
         return unless record
