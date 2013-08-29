@@ -1,4 +1,5 @@
 require 'sequel'
+require 'pathname'
 
 module Dannunzio
   module SQL
@@ -15,9 +16,12 @@ module Dannunzio
         end
 
         def data_path
-          return @data_path if @data_path
-          path = ENV["DANNUNZIO_DATA_PATH"] || "~/.dannunzio/pop3.db"
-          @data_path = File.expand_path(path)
+          @data_path ||= begin
+            path = ENV["DANNUNZIO_DATA_PATH"] || "~/.dannunzio/pop3.db"
+            @data_path = File.expand_path(path)
+            Pathname.new(@data_path).parent.mkpath
+            @data_path
+          end
         end
       end
 
