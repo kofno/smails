@@ -1,5 +1,6 @@
 require 'socket'
 require_relative 'session'
+require_relative 'commands'
 
 module Dannunzio
 

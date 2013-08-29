@@ -6,11 +6,12 @@ module Dannunzio
 
   class Session
 
-    attr_reader :client, :mode, :maildrops, :maildrop, :lock
+    attr_reader :client, :mode, :commands, :maildrops, :maildrop, :lock
 
     def initialize args
-      @client = args.fetch(:client)
-      @maildrops = args.fetch(:maildrops, Maildrops.new)
+      @client    = args.fetch :client
+      @maildrops = args.fetch :maildrops, Maildrops.new
+      @commands  = args.fetch :commands,  Commands.new(self)
     end
 
     def start
@@ -91,8 +92,8 @@ module Dannunzio
 
     def receive_commands
       until client.closed?
-        command = client.gets
-        mode.process_command command
+        request = client.gets
+        commands.process request
       end
     ensure
       lock.release if locked?

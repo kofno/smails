@@ -1,11 +1,9 @@
 require 'forwardable'
-require 'dannunzio/command_processor'
 
 module Dannunzio
 
   class AuthorizationMode
     extend Forwardable
-    include CommandProcessor
 
     attr_reader :session, :username
     def_delegators :@session, :send_ok, :send_err
@@ -34,7 +32,7 @@ module Dannunzio
 
     def unsupported_command
       reset_auth
-      super
+      send_err "unrecognized command"
     end
 
     def reset_auth

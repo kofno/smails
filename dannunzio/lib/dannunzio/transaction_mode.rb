@@ -1,11 +1,9 @@
 require 'forwardable'
-require 'dannunzio/command_processor'
 
 module Dannunzio
 
   class TransactionMode
     extend Forwardable
-    include CommandProcessor
 
     attr_reader :session
     def_delegators :@session, :lock, :send_ok, :send_err, :send_multi
