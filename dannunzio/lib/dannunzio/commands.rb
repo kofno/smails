@@ -41,7 +41,7 @@ module Dannunzio
         mode.rset
 
       else
-        raise UnsupportedCommand
+        mode.unsupported_command
       end
     end
 
@@ -61,5 +61,4 @@ module Dannunzio
 
   end
 
-  class UnsupportedCommand < StandardError; end
 end
