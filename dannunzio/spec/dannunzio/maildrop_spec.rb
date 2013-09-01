@@ -1,5 +1,4 @@
 require 'spec_helper'
-require 'dannunzio/maildrop'
 
 module Dannunzio
 

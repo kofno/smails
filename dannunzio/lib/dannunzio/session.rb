@@ -1,4 +1,3 @@
-require 'dannunzio/maildrops'
 require 'dannunzio/authorization_mode'
 require 'dannunzio/transaction_mode'
 
@@ -6,11 +5,10 @@ module Dannunzio
 
   class Session
 
-    attr_reader :client, :mode, :commands, :maildrops, :maildrop, :lock
+    attr_reader :client, :mode, :commands, :maildrop, :lock
 
     def initialize args
       @client    = args.fetch :client
-      @maildrops = args.fetch :maildrops, Maildrops.new
       @commands  = args.fetch :commands,  Commands.new(self)
     end
 
@@ -49,7 +47,7 @@ module Dannunzio
     end
 
     def update
-      lock.clear_deleted_messages
+      lock.purge
       send_sign_off
     rescue => e
       Dannunzio.logger.error(e)
@@ -61,7 +59,7 @@ module Dannunzio
     private
 
     def authenticate! username, password
-      @maildrop = maildrops.access username: username, password: password
+      @maildrop = Maildrop.authenticate! username: username, password: password
     end
 
     def lock_maildrop!
@@ -96,7 +94,7 @@ module Dannunzio
         commands.process request
       end
     ensure
-      lock.release if locked?
+      lock.destroy if locked?
     end
 
     def locked?

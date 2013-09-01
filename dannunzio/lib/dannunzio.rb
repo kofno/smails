@@ -12,6 +12,7 @@ module Dannunzio
       log_shift = ENV['DANNUNZIO_LOG_SHIFT'] || 'daily'
       log_level = ENV['DANNUNZIO_LOG_LEVEL'] || 'debug'
 
+      DataMapper::Logger.new(log_dev, log_level.to_sym)
       logger = Logger.new(log_dev, log_shift)
       logger.level = Logger.const_get log_level.upcase
       logger

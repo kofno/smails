@@ -1,7 +1,13 @@
-ENV['DANNUNZIO_BCRYPT_COST'] = '4'
-
 require 'dannunzio'
 
 RSpec.configure do |c|
-  c.after(:each) { Dannunzio::Storage.reset }
+  DataMapper.setup(:default, 'sqlite::memory:')
+  DataMapper.auto_migrate!
+
+  c.after :each do
+    Dannunzio::LockedMessage.all.destroy
+    Dannunzio::Lock.all.destroy
+    Dannunzio::Message.all.destroy
+    Dannunzio::Maildrop.all.destroy
+  end
 end

@@ -1,6 +1,7 @@
 require 'socket'
 require_relative 'session'
 require_relative 'commands'
+require_relative 'entities'
 
 module Dannunzio
 
@@ -9,6 +10,8 @@ module Dannunzio
     attr_reader :port
 
     def self.run args={}
+      DataMapper.setup(:default, 'sqlite::memory:')
+      DateMapper.auto_upgrade!
       server = new args
       server.start
     end

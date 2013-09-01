@@ -5,15 +5,11 @@ module Dannunzio
 
   describe Session do
     let(:client)  { double :client }
-    let(:maildrops) {
-      maildrops = Maildrops.new
-      maildrops << Maildrop.new(username: 'kofno', password: 'secret')
-      maildrops
-    }
     let(:session) {
-      Session.new client: client,
-                  maildrops: maildrops
+      Session.new client: client
     }
+
+    before { Maildrop.create username: 'kofno', password: 'secret' }
 
     it "starts the sessions" do
       client.should_receive(:write).with "+OK D'Annunzio POP3 is ready!\r\n"

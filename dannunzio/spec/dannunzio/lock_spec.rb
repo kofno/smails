@@ -1,7 +1,4 @@
 require 'spec_helper'
-require 'dannunzio/lock'
-require 'dannunzio/maildrop'
-require 'dannunzio/message'
 
 module Dannunzio
 
@@ -10,10 +7,10 @@ module Dannunzio
     let(:msg2) { "<Example 2>\r\n<Line 2>" }
     let(:msg3) { "<Example 3>\r\n<Line 2>" }
     let(:drop) {
-      drop = Maildrop.new
-      drop << Message.new(msg1)
-      drop << Message.new(msg2)
-      drop << Message.new(msg3)
+      drop =  Maildrop.create username: 'kofno', password: 'secret'
+      drop.messages.create(content: msg1)
+      drop.messages.create(content: msg2)
+      drop.messages.create(content: msg3)
       drop
     }
     let(:lock) { drop.acquire_lock! }
@@ -29,8 +26,8 @@ module Dannunzio
     it 'returns a full scan listing' do
       listings = lock.scan_listings
       expect(listings.size).to eq(2)
-      expect(listings[0].to_s).to eq('0 21')
-      expect(listings[1].to_s).to eq('1 21')
+      expect(listings[0].to_s).to eq('1 21')
+      expect(listings[1].to_s).to eq('3 21')
     end
 
     it 'returns a single scan listing' do
@@ -42,12 +39,12 @@ module Dannunzio
     end
 
     it 'returns the content of a message' do
-      content = lock.message_content 0
+      content = lock.message_at_pos(1).content
       expect(content).to eq(msg1)
     end
 
     it 'raises an error when trying to return a deleted message' do
-      expect { lock.message_content 2 }.to raise_error 'no such message'
+      expect { lock.message_at_pos(2).content }.to raise_error 'no such message'
     end
 
     it 'raises an error trying to delete a deleted message' do
@@ -55,13 +52,13 @@ module Dannunzio
     end
 
     it 'undeletes all messages' do
-      lock.undelete_all
-      expect(lock.message_content(2)).to eq(msg3)
+      lock.reset
+      expect(lock.message_at_pos(3).content).to eq(msg3)
     end
 
     it 'completely destroys messages marked deleted' do
-      lock.clear_deleted_messages
-      expect(drop.messages.size).to eq(2)
+      lock.purge
+      expect(drop.messages.count).to eq(2)
     end
   end
 
