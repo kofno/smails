@@ -16,7 +16,7 @@ module Dannunzio
 
     def initialize args={}
       @port = args.fetch :port, 110
-      initialize_db
+      initialize_db args
       trap(:INT) { exit }
     end
 
