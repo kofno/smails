@@ -14,9 +14,8 @@ module Dannunzio
       password = args.fetch :password
 
       maildrop = Maildrop.first username: username
-      maildrop.nil? ?
-        raise('invalid credentials') :
-        maildrop.authenticate!(password)
+      raise('invalid credentials') if maildrop.nil?
+      maildrop.authenticate!(password)
     end
 
     # Race condition!

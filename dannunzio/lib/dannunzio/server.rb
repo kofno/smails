@@ -10,14 +10,13 @@ module Dannunzio
     attr_reader :port
 
     def self.run args={}
-      DataMapper.setup(:default, 'sqlite::memory:')
-      DateMapper.auto_upgrade!
       server = new args
       server.start
     end
 
     def initialize args={}
       @port = args.fetch :port, 110
+      initialize_db
       trap(:INT) { exit }
     end
 
@@ -31,6 +30,12 @@ module Dannunzio
     end
 
     private
+
+    def initialize_db args={}
+      db_url = args.fetch :db, 'sqlite::memory:'
+      DataMapper.setup :default, db_url
+      DataMapper.auto_upgrade!
+    end
 
     def start_thread
       Thread.start(tcp_server.accept) do |client|

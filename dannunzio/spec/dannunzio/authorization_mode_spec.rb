@@ -4,55 +4,70 @@ require 'dannunzio/authorization_mode'
 module Dannunzio
 
   describe AuthorizationMode do
-    let(:session) { double :session }
-    let(:mode)    { AuthorizationMode.new session }
+    let(:client)  { double :client  }
+    let(:session) { Session.new client: client }
+    let(:mode)    { session.send :authorization_mode }
+
+    before { Maildrop.create username: 'kofno', password: 'secret' }
 
     describe "client sessions sending a QUIT command" do
 
       it "are ended immediately" do
-        session.should_receive(:send_sign_off)
-        session.should_receive(:close)
+        client.should_receive(:write).with "+OK D'Annunzio signing off\r\n"
+        client.should_receive :close
         mode.quit
       end
 
     end
 
-    describe "client sessions sending a USER command" do
+    describe "client sessions sending valid credentials" do
 
-      it "receive an OK on any non-blank username" do
-        session.should_receive(:send_ok)
-        mode.user 'foo@foo.com'
+      it "receive an OK message and lock the maildrop" do
+        client.should_receive(:write).with "+OK \r\n"
+        client.should_receive(:write).with "+OK maildrop is locked and ready\r\n"
+
+        mode.user 'kofno'
+        mode.pass 'secret'
+
+        expect(session.mode).to_not be(mode)
+      end
+
+      it "receive an err if the maildrop can't be locked" do
+        Maildrop.first(username: 'kofno').acquire_lock!
+
+        client.should_receive(:write).with "+OK \r\n"
+        client.should_receive(:write).with "-ERR unable to lock maildrop\r\n"
+
+        mode.user 'kofno'
+        mode.pass 'secret'
+
+        expect(session.mode).to be(mode)
       end
 
     end
 
-    describe "client sessions sending a PASS commnd" do
+    describe "client sessions sending invalid credentials" do
       
-      it "receive an ERR if authentication fails" do
-        mode.should_receive(:username).and_return 'foo'
-        session.should_receive(:acquire_lock!).with('foo', 'secret').and_raise 'invalid credentials'
-        mode.should_receive(:reset_auth)
-        mode.should_receive(:send_err).with 'invalid credentials'
+      it "receive an ERR if maildrop isn't recognized" do
+        client.should_receive(:write).with "+OK \r\n"
+        client.should_receive(:write).with "-ERR invalid credentials\r\n"
 
+        mode.user 'not-a-maildrop'
         mode.pass 'secret'
+
+        expect(session.mode).to be(mode)
       end
 
-      it "receive an ERR if a mailbox lock can't be acquired" do
-        mode.should_receive(:username).and_return 'foo'
-        session.should_receive(:acquire_lock!).with('foo', 'secret').and_raise 'unable to lock maildrop'
-        mode.should_receive(:reset_auth)
-        mode.should_receive(:send_err).with 'unable to lock maildrop'
+      it "receive an ERR is password is incorrect" do
+        client.should_receive(:write).with "+OK \r\n"
+        client.should_receive(:write).with "-ERR invalid credentials\r\n"
 
-        mode.pass 'secret'
+        mode.user 'kofno'
+        mode.pass 'bad-pass'
+
+        expect(session.mode).to be(mode)
       end
 
-      it "enters TRANSACTION MODE if auth succeeds and lock acquired" do
-        mode.should_receive(:username).and_return 'foo'
-        session.should_receive(:acquire_lock!).with 'foo', 'secret'
-        session.should_receive(:send_ok).with 'maildrop is locked and ready'
-
-        mode.pass 'secret'
-      end
     end
 
     describe "unsupported commands" do
